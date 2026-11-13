@@ -1,0 +1,4104 @@
+{
+  "endpoint": "https://rpc.testnet.postfiat.org/",
+  "fetch_finished_utc": "2026-11-13T20:59:44Z",
+  "fetch_started_utc": "2026-11-13T20:57:45Z",
+  "harness_version": "1.0.0",
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "probe_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+  "probe_tx_hash": "26A1A21211FA1FD1D7B41259A3A17E860D438FA00609052BFC20F0825BA7BE11",
+  "probes": {
+    "account_channels": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 879,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_channels",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "channels": [],
+          "ledger_current_index": 8023090,
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 151,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "channels",
+        "ledger_current_index",
+        "status",
+        "validated"
+      ]
+    },
+    "account_currencies": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 716,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_currencies",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger_current_index": 8023090,
+          "receive_currencies": [],
+          "send_currencies": [],
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 135,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger_current_index",
+        "receive_currencies",
+        "send_currencies",
+        "status",
+        "validated"
+      ]
+    },
+    "account_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 838,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_info",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_index": "validated"
+        }
+      ],
+      "response": {
+        "result": {
+          "account_data": {
+            "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "Balance": "16697349929",
+            "FirstNFTokenSequence": 7755239,
+            "Flags": 0,
+            "LedgerEntryType": "AccountRoot",
+            "MintedNFTokens": 6,
+            "OwnerCount": 1,
+            "PreviousTxnID": "2FA84094723736800A5E3109A17FE7579A3EF87E4F390F0DD279591AE2768633",
+            "PreviousTxnLgrSeq": 8022102,
+            "Sequence": 7755245,
+            "index": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E"
+          },
+          "account_flags": {
+            "allowTrustLineClawback": false,
+            "defaultRipple": false,
+            "depositAuth": false,
+            "disableMasterKey": false,
+            "disallowIncomingCheck": false,
+            "disallowIncomingNFTokenOffer": false,
+            "disallowIncomingPayChan": false,
+            "disallowIncomingTrustline": false,
+            "disallowIncomingXRP": false,
+            "globalFreeze": false,
+            "noFreeze": false,
+            "passwordSpent": false,
+            "requireAuthorization": false,
+            "requireDestinationTag": false
+          },
+          "ledger_hash": "5B5755D55B3CF262D2C7CE916D44C8970697A368B631FB9751B9209C59985596",
+          "ledger_index": 8023088,
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1008,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account_data",
+        "account_flags",
+        "ledger_hash",
+        "ledger_index",
+        "status",
+        "validated"
+      ]
+    },
+    "account_lines": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 849,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_lines",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_current_index": 8023090,
+          "lines": [],
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 148,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "ledger_current_index",
+        "lines",
+        "status",
+        "validated"
+      ]
+    },
+    "account_nfts": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 830,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_nfts",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "limit": 5
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "account_nfts": [
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D574E38656644336833566A5451353855696338456F506A556B68717137795A59666179503958475878705978",
+              "nft_serial": 7755239
+            },
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5646520C783007655E8",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D53707878434B3433436936656B66684E59544A575262324363465164644E65635537535A31446F5754657953",
+              "nft_serial": 7755240
+            },
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5647C069884007655E9",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D563563704B4E52363456515476484845537532676D64414C5459365069556A71595447483573734254514572",
+              "nft_serial": 7755241
+            },
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B56492EC6985007655EA",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D527A584D636263373470527A447273727452764C674D4468486139736142623769654E776671376B56383747",
+              "nft_serial": 7755242
+            },
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B564A9D23A86007655EB",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D5A71736163314A5231344157324E4E433874734D6B5545786D3551756E51355846536957427746313473516E",
+              "nft_serial": 7755243
+            },
+            {
+              "Flags": 9,
+              "Issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B564C0B80B87007655EC",
+              "NFTokenTaxon": 0,
+              "URI": "697066733A2F2F516D517376786D745274724A6E73784B443471696B4C396337464D7A76795750637A66445A5A6538545658593373",
+              "nft_serial": 7755244
+            }
+          ],
+          "ledger_current_index": 8023091,
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1965,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "account_nfts",
+        "ledger_current_index",
+        "status",
+        "validated"
+      ]
+    },
+    "account_objects": {
+      "api_version": 2,
+      "attempts": 3,
+      "duration_ms": 804,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_objects",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "limit": 5
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "account_objects": [
+            {
+              "Flags": 0,
+              "LedgerEntryType": "NFTokenPage",
+              "NFTokens": [
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7",
+                    "URI": "697066733A2F2F516D574E38656644336833566A5451353855696338456F506A556B68717137795A59666179503958475878705978"
+                  }
+                },
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5646520C783007655E8",
+                    "URI": "697066733A2F2F516D53707878434B3433436936656B66684E59544A575262324363465164644E65635537535A31446F5754657953"
+                  }
+                },
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5647C069884007655E9",
+                    "URI": "697066733A2F2F516D563563704B4E52363456515476484845537532676D64414C5459365069556A71595447483573734254514572"
+                  }
+                },
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B56492EC6985007655EA",
+                    "URI": "697066733A2F2F516D527A584D636263373470527A447273727452764C674D4468486139736142623769654E776671376B56383747"
+                  }
+                },
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B564A9D23A86007655EB",
+                    "URI": "697066733A2F2F516D5A71736163314A5231344157324E4E433874734D6B5545786D3551756E51355846536957427746313473516E"
+                  }
+                },
+                {
+                  "NFToken": {
+                    "NFTokenID": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B564C0B80B87007655EC",
+                    "URI": "697066733A2F2F516D517376786D745274724A6E73784B443471696B4C396337464D7A76795750637A66445A5A6538545658593373"
+                  }
+                }
+              ],
+              "PreviousTxnID": "DA20402FD42169CCB861A9CDDF71D097D31036E6EF01BAE7A67E9CB9369E7DC3",
+              "PreviousTxnLgrSeq": 7982187,
+              "index": "B883BBBA251BAF7A53D5E2A51E44969FF3A2B564FFFFFFFFFFFFFFFFFFFFFFFF"
+            }
+          ],
+          "ledger_current_index": 8023094,
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1688,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "account_objects",
+        "ledger_current_index",
+        "status",
+        "validated"
+      ]
+    },
+    "account_offers": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 869,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_offers",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_current_index": 8023094,
+          "offers": [],
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 149,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "ledger_current_index",
+        "offers",
+        "status",
+        "validated"
+      ]
+    },
+    "account_tx": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1042,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "account_tx",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_index_max": -1,
+          "ledger_index_min": -1,
+          "limit": 5
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_index_max": 8023093,
+          "ledger_index_min": 7950054,
+          "limit": 5,
+          "marker": {
+            "ledger": 8003520,
+            "seq": 0
+          },
+          "status": "success",
+          "transactions": [
+            {
+              "meta": {
+                "AffectedNodes": [
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                        "Balance": "488031883154664",
+                        "FirstNFTokenSequence": 66,
+                        "Flags": 0,
+                        "MessageKey": "ED927CB245F3BDC2CF499881E3380EEFD31E3E8637E59CA7862212D54BF1B40703",
+                        "MintedNFTokens": 1,
+                        "OwnerCount": 1,
+                        "Sequence": 7661
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "0CC07D97A6451E15436C9186C1F31F943823AE459C98AE62477C35B4C0BBBCBB",
+                      "PreviousFields": {
+                        "Balance": "488031888154676",
+                        "Sequence": 7660
+                      },
+                      "PreviousTxnID": "874E15393D9D31624E8978484E6DF2EA27950F76FA9585CA416FAD56263966B0",
+                      "PreviousTxnLgrSeq": 8021313
+                    }
+                  },
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                        "Balance": "16697349929",
+                        "FirstNFTokenSequence": 7755239,
+                        "Flags": 0,
+                        "MintedNFTokens": 6,
+                        "OwnerCount": 1,
+                        "Sequence": 7755245
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+                      "PreviousFields": {
+                        "Balance": "16692349929"
+                      },
+                      "PreviousTxnID": "3D513C75D0724AA9C834F145D7D173EDD721ABB92CDE6ACD62782C46E2DA2466",
+                      "PreviousTxnLgrSeq": 8020569
+                    }
+                  }
+                ],
+                "TransactionIndex": 0,
+                "TransactionResult": "tesSUCCESS",
+                "delivered_amount": "5000000"
+              },
+              "tx": {
+                "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                "Amount": "5000000",
+                "DeliverMax": "5000000",
+                "Destination": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                "Fee": "12",
+                "Flags": 0,
+                "LastLedgerSequence": 8022220,
+                "Memos": [
+                  {
+                    "Memo": {
+                      "MemoData": "0A2E516D5677796D7444656846474B52426F4333707077704E76616D5564466A51594B727A4144676446796E68336D541001180620012A257461736B5F66633265306537376462386538306365303739326666316234386631636631644001",
+                      "MemoFormat": "7634",
+                      "MemoType": "70662E707472"
+                    }
+                  }
+                ],
+                "NetworkID": 2025,
+                "Sequence": 7660,
+                "SigningPubKey": "ED4B56D69792B61CC7FBA0DE2626D288F4A064A2F8A72F86E96DB3021209426569",
+                "TransactionType": "Payment",
+                "TxnSignature": "779B6C3821B8CF0C6E4CBDBB67C17EB9405A4C234ADBE6AE0AA65410F5A93FCA5CC4E8B0B25493F6FFB85CC162A80DF63CA413CF81D250B37232E7E2F192EB09",
+                "ctid": "C07A6856000007E9",
+                "date": 847915670,
+                "hash": "2FA84094723736800A5E3109A17FE7579A3EF87E4F390F0DD279591AE2768633",
+                "inLedger": 8022102,
+                "ledger_index": 8022102
+              },
+              "validated": true
+            },
+            {
+              "meta": {
+                "AffectedNodes": [
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                        "Balance": "488031893154688",
+                        "FirstNFTokenSequence": 66,
+                        "Flags": 0,
+                        "MessageKey": "ED927CB245F3BDC2CF499881E3380EEFD31E3E8637E59CA7862212D54BF1B40703",
+                        "MintedNFTokens": 1,
+                        "OwnerCount": 1,
+                        "Sequence": 7659
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "0CC07D97A6451E15436C9186C1F31F943823AE459C98AE62477C35B4C0BBBCBB",
+                      "PreviousFields": {
+                        "Balance": "488031898154700",
+                        "Sequence": 7658
+                      },
+                      "PreviousTxnID": "1D03D5B0790BA246491E3C69BB2FBF6FD6DAB625E877EBDA39A89A78639DA23F",
+                      "PreviousTxnLgrSeq": 8020079
+                    }
+                  },
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                        "Balance": "16692349929",
+                        "FirstNFTokenSequence": 7755239,
+                        "Flags": 0,
+                        "MintedNFTokens": 6,
+                        "OwnerCount": 1,
+                        "Sequence": 7755245
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+                      "PreviousFields": {
+                        "Balance": "16687349929"
+                      },
+                      "PreviousTxnID": "C7CEE4313AC5E0A188DACEE3E7041DE1342B0F1FCEE1DF528BB3CF4BC9B68E15",
+                      "PreviousTxnLgrSeq": 8019019
+                    }
+                  }
+                ],
+                "TransactionIndex": 0,
+                "TransactionResult": "tesSUCCESS",
+                "delivered_amount": "5000000"
+              },
+              "tx": {
+                "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                "Amount": "5000000",
+                "DeliverMax": "5000000",
+                "Destination": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                "Fee": "12",
+                "Flags": 0,
+                "LastLedgerSequence": 8020687,
+                "Memos": [
+                  {
+                    "Memo": {
+                      "MemoData": "0A2E516D64674E474B4E726A5150386D59345A54426E564276334168793931657770753964465A7254513776593354551001180620012A257461736B5F66386535626337643235336538646133326261663264386136373730353766314001",
+                      "MemoFormat": "7634",
+                      "MemoType": "70662E707472"
+                    }
+                  }
+                ],
+                "NetworkID": 2025,
+                "Sequence": 7658,
+                "SigningPubKey": "ED4B56D69792B61CC7FBA0DE2626D288F4A064A2F8A72F86E96DB3021209426569",
+                "TransactionType": "Payment",
+                "TxnSignature": "F9E00FF9E3CCFBF9208A3DC32D73B941F032B723DA1D68D87067BF14AFFE4440655A0D0DA86B5D4C38A0DA8C4655087A8FE374C9DE5FDE58EB6C340C09855501",
+                "ctid": "C07A6259000007E9",
+                "date": 847911030,
+                "hash": "3D513C75D0724AA9C834F145D7D173EDD721ABB92CDE6ACD62782C46E2DA2466",
+                "inLedger": 8020569,
+                "ledger_index": 8020569
+              },
+              "validated": true
+            },
+            {
+              "meta": {
+                "AffectedNodes": [
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                        "Balance": "488031901154712",
+                        "FirstNFTokenSequence": 66,
+                        "Flags": 0,
+                        "MessageKey": "ED927CB245F3BDC2CF499881E3380EEFD31E3E8637E59CA7862212D54BF1B40703",
+                        "MintedNFTokens": 1,
+                        "OwnerCount": 1,
+                        "Sequence": 7657
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "0CC07D97A6451E15436C9186C1F31F943823AE459C98AE62477C35B4C0BBBCBB",
+                      "PreviousFields": {
+                        "Balance": "488031906154724",
+                        "Sequence": 7656
+                      },
+                      "PreviousTxnID": "6F3B59D8199995C071EF8C4F4E78107E59E6ABAE291757D5111ED6A4815CCDE4",
+                      "PreviousTxnLgrSeq": 8018367
+                    }
+                  },
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                        "Balance": "16687349929",
+                        "FirstNFTokenSequence": 7755239,
+                        "Flags": 0,
+                        "MintedNFTokens": 6,
+                        "OwnerCount": 1,
+                        "Sequence": 7755245
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+                      "PreviousFields": {
+                        "Balance": "16682349929"
+                      },
+                      "PreviousTxnID": "FC2C3EE676DA629634CCE946A25C1D0CC49BFC525CA36A6479AD1247995729E7",
+                      "PreviousTxnLgrSeq": 8017509
+                    }
+                  }
+                ],
+                "TransactionIndex": 0,
+                "TransactionResult": "tesSUCCESS",
+                "delivered_amount": "5000000"
+              },
+              "tx": {
+                "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                "Amount": "5000000",
+                "DeliverMax": "5000000",
+                "Destination": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                "Fee": "12",
+                "Flags": 0,
+                "LastLedgerSequence": 8019137,
+                "Memos": [
+                  {
+                    "Memo": {
+                      "MemoData": "0A2E516D66513347634B4831745A38364B314E424C434B42584E666669417A6D6F6D5054626E5376765444724D6652381001180620012A257461736B5F33366235393464353932613339343033383933623632363230636137313561654001",
+                      "MemoFormat": "7634",
+                      "MemoType": "70662E707472"
+                    }
+                  }
+                ],
+                "NetworkID": 2025,
+                "Sequence": 7656,
+                "SigningPubKey": "ED4B56D69792B61CC7FBA0DE2626D288F4A064A2F8A72F86E96DB3021209426569",
+                "TransactionType": "Payment",
+                "TxnSignature": "AAF8959D4EBECBFFE46289B327E979CAA417018369B5BB910DD38A17B0C3BDFD17FC48C674F032307A539F8CC7CEF3C807C3D75FCE2D5572F028748B1B246704",
+                "ctid": "C07A5C4B000007E9",
+                "date": 847906342,
+                "hash": "C7CEE4313AC5E0A188DACEE3E7041DE1342B0F1FCEE1DF528BB3CF4BC9B68E15",
+                "inLedger": 8019019,
+                "ledger_index": 8019019
+              },
+              "validated": true
+            },
+            {
+              "meta": {
+                "AffectedNodes": [
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                        "Balance": "488035114454760",
+                        "FirstNFTokenSequence": 66,
+                        "Flags": 0,
+                        "MessageKey": "ED927CB245F3BDC2CF499881E3380EEFD31E3E8637E59CA7862212D54BF1B40703",
+                        "MintedNFTokens": 1,
+                        "OwnerCount": 1,
+                        "Sequence": 7653
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "0CC07D97A6451E15436C9186C1F31F943823AE459C98AE62477C35B4C0BBBCBB",
+                      "PreviousFields": {
+                        "Balance": "488035119454772",
+                        "Sequence": 7652
+                      },
+                      "PreviousTxnID": "84C28CC6D3A03CD8F10D00F18ABC5A5A0D23527392ADDAFA86014ED44A01EE65",
+                      "PreviousTxnLgrSeq": 8017389
+                    }
+                  },
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                        "Balance": "16682349929",
+                        "FirstNFTokenSequence": 7755239,
+                        "Flags": 0,
+                        "MintedNFTokens": 6,
+                        "OwnerCount": 1,
+                        "Sequence": 7755245
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+                      "PreviousFields": {
+                        "Balance": "16677349929"
+                      },
+                      "PreviousTxnID": "ECBA2221C59A79265ACF8F809FC6C17578C8489AAA3511ED24B0506AFCF00FD3",
+                      "PreviousTxnLgrSeq": 8016346
+                    }
+                  }
+                ],
+                "TransactionIndex": 0,
+                "TransactionResult": "tesSUCCESS",
+                "delivered_amount": "5000000"
+              },
+              "tx": {
+                "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                "Amount": "5000000",
+                "DeliverMax": "5000000",
+                "Destination": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                "Fee": "12",
+                "Flags": 0,
+                "LastLedgerSequence": 8017627,
+                "Memos": [
+                  {
+                    "Memo": {
+                      "MemoData": "0A2E516D517A4D4C576E554D72545774797347543144505978424A315A38487779706B487A5045466F435A73663943741001180620012A257461736B5F66643762663664373635333130623839663133363937373364393665343934314001",
+                      "MemoFormat": "7634",
+                      "MemoType": "70662E707472"
+                    }
+                  }
+                ],
+                "NetworkID": 2025,
+                "Sequence": 7652,
+                "SigningPubKey": "ED4B56D69792B61CC7FBA0DE2626D288F4A064A2F8A72F86E96DB3021209426569",
+                "TransactionType": "Payment",
+                "TxnSignature": "184B272FBBD302A27F11EF6BA1D9C28E2D553412DE99757F1DFAB615B188DC9271E60E1345C0B7042C3EE71CFA26E235A70D99B8AD43049BBBAE98B59E0BE60A",
+                "ctid": "C07A5665000007E9",
+                "date": 847901772,
+                "hash": "FC2C3EE676DA629634CCE946A25C1D0CC49BFC525CA36A6479AD1247995729E7",
+                "inLedger": 8017509,
+                "ledger_index": 8017509
+              },
+              "validated": true
+            },
+            {
+              "meta": {
+                "AffectedNodes": [
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                        "Balance": "488035141054832",
+                        "FirstNFTokenSequence": 66,
+                        "Flags": 0,
+                        "MessageKey": "ED927CB245F3BDC2CF499881E3380EEFD31E3E8637E59CA7862212D54BF1B40703",
+                        "MintedNFTokens": 1,
+                        "OwnerCount": 1,
+                        "Sequence": 7647
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "0CC07D97A6451E15436C9186C1F31F943823AE459C98AE62477C35B4C0BBBCBB",
+                      "PreviousFields": {
+                        "Balance": "488035146054844",
+                        "Sequence": 7646
+                      },
+                      "PreviousTxnID": "FA7B647FD58C679D24AAA51BFD3863FE47E9BBEA2432B4C96161182FAEEC1A73",
+                      "PreviousTxnLgrSeq": 8016278
+                    }
+                  },
+                  {
+                    "ModifiedNode": {
+                      "FinalFields": {
+                        "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                        "Balance": "16677349929",
+                        "FirstNFTokenSequence": 7755239,
+                        "Flags": 0,
+                        "MintedNFTokens": 6,
+                        "OwnerCount": 1,
+                        "Sequence": 7755245
+                      },
+                      "LedgerEntryType": "AccountRoot",
+                      "LedgerIndex": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+                      "PreviousFields": {
+                        "Balance": "16672349929"
+                      },
+                      "PreviousTxnID": "1AC23EFBEFAC6CFCF3B766E52DEF4DF8C214F02AF8645678BC2D44D78D0C7EF8",
+                      "PreviousTxnLgrSeq": 8003520
+                    }
+                  }
+                ],
+                "TransactionIndex": 0,
+                "TransactionResult": "tesSUCCESS",
+                "delivered_amount": "5000000"
+              },
+              "tx": {
+                "Account": "rwdm72S9YVKkZjeADKU2bbUMuY4vPnSfH7",
+                "Amount": "5000000",
+                "DeliverMax": "5000000",
+                "Destination": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+                "Fee": "12",
+                "Flags": 0,
+                "LastLedgerSequence": 8016464,
+                "Memos": [
+                  {
+                    "Memo": {
+                      "MemoData": "0A2E516D516F564A77513735313544334D5542537638796875594673525463754163457071706B7A32776F4E513547751001180620012A257461736B5F38363464643066636537376636396531303536306233353030633530646235384001",
+                      "MemoFormat": "7634",
+                      "MemoType": "70662E707472"
+                    }
+                  }
+                ],
+                "NetworkID": 2025,
+                "Sequence": 7646,
+                "SigningPubKey": "ED4B56D69792B61CC7FBA0DE2626D288F4A064A2F8A72F86E96DB3021209426569",
+                "TransactionType": "Payment",
+                "TxnSignature": "1C6D6A40E7029B393F391872D3830190373DC6D6AF5DCB5373C65655890C371818B3F9018BA3A2E155D316FCC9A73D6776364466AAE84C877F8981A45C1E4B09",
+                "ctid": "C07A51DA000007E9",
+                "date": 847898260,
+                "hash": "ECBA2221C59A79265ACF8F809FC6C17578C8489AAA3511ED24B0506AFCF00FD3",
+                "inLedger": 8016346,
+                "ledger_index": 8016346
+              },
+              "validated": true
+            }
+          ],
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 11185,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "ledger_index_max",
+        "ledger_index_min",
+        "limit",
+        "marker",
+        "status",
+        "transactions",
+        "validated"
+      ]
+    },
+    "amm_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 783,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Invalid parameters.",
+      "method": "amm_info",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Invalid parameters.",
+          "ledger_current_index": 8023095,
+          "request": {
+            "command": "amm_info"
+          },
+          "status": "error",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 204,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "ledger_current_index",
+        "request",
+        "status",
+        "validated"
+      ]
+    },
+    "blacklist": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "blacklist",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "book_changes": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 784,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "book_changes",
+      "outcome": "success",
+      "params": [
+        {
+          "limit": 1,
+          "taker_gets": {
+            "currency": "XRP"
+          },
+          "taker_pays": {
+            "currency": "XRP"
+          }
+        }
+      ],
+      "response": {
+        "result": {
+          "changes": [],
+          "ledger_hash": "814012EFA8C7CD56A0782556808B3AB0D8E35E475DA1508158B77C91DB57F410",
+          "ledger_index": 8023095,
+          "ledger_time": 847918682,
+          "status": "success",
+          "type": "bookChanges",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 225,
+        "stored": "full"
+      },
+      "result_keys": [
+        "changes",
+        "ledger_hash",
+        "ledger_index",
+        "ledger_time",
+        "status",
+        "type",
+        "validated"
+      ]
+    },
+    "book_offers": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 822,
+      "error_code": "badMarket",
+      "error_code_num": 42,
+      "error_message": "No such market.",
+      "method": "book_offers",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "limit": 1,
+          "taker_gets": {
+            "currency": "XRP"
+          },
+          "taker_pays": {
+            "currency": "XRP"
+          }
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "badMarket",
+          "error_code": 42,
+          "error_message": "No such market.",
+          "request": {
+            "command": "book_offers",
+            "limit": 1,
+            "taker_gets": {
+              "currency": "XRP"
+            },
+            "taker_pays": {
+              "currency": "XRP"
+            }
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 228,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "can_delete": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "can_delete",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "channel_authorize": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 807,
+      "error_code": "notSupported",
+      "error_code_num": 75,
+      "error_message": "Signing is not supported by this server.",
+      "method": "channel_authorize",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "notSupported",
+          "error_code": 75,
+          "error_message": "Signing is not supported by this server.",
+          "request": {
+            "command": "channel_authorize"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 180,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "channel_verify": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 811,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Missing field 'public_key'.",
+      "method": "channel_verify",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Missing field 'public_key'.",
+          "request": {
+            "command": "channel_verify"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 165,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "connect": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "connect",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "consensus_info": {
+      "api_version": 2,
+      "attempts": 3,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "consensus_info",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "deposit_authorized": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 781,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "deposit_authorized",
+      "outcome": "success",
+      "params": [
+        {
+          "destination_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "deposit_authorized": true,
+          "destination_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_current_index": 8023101,
+          "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 231,
+        "stored": "full"
+      },
+      "result_keys": [
+        "deposit_authorized",
+        "destination_account",
+        "ledger_current_index",
+        "source_account",
+        "status",
+        "validated"
+      ]
+    },
+    "exclusion_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 989,
+      "error_code": "notEnabled",
+      "error_code_num": 12,
+      "error_message": "PF_AccountExclusion feature is not enabled",
+      "method": "exclusion_info",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "notEnabled",
+          "error_code": 12,
+          "error_message": "PF_AccountExclusion feature is not enabled",
+          "request": {
+            "command": "exclusion_info"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 177,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "feature": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1037,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "feature",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "features": {
+            "00C1FC4A53E60AB02C864641002B3172F38677E29C26C5406685179B37E1EDAC": {
+              "enabled": true,
+              "name": "RequireFullyCanonicalSig",
+              "supported": true
+            },
+            "0285B7E5E08E1A8E4C15636F0591D87F73CB6A7B6452A932AD72BBC8E5D1CBE3": {
+              "enabled": false,
+              "name": "fixNFTokenDirV1",
+              "supported": true
+            },
+            "03BDC0099C4E14163ADA272C1B6F6FABB448CC3E51F522F978041E4B57D9158C": {
+              "enabled": true,
+              "name": "fixNFTokenReserve",
+              "supported": true
+            },
+            "07D43DCE529B15A10827E5E04943B496762F9A88E3268269D69C44BE49E21104": {
+              "enabled": false,
+              "name": "Escrow",
+              "supported": true
+            },
+            "08DE7D96082187F6E6578530258C77FAABABE4C20474BDB82F04B021F1A68647": {
+              "enabled": false,
+              "name": "PayChan",
+              "supported": true
+            },
+            "12523DF04B553A0B1AD74F42DDB741DE8DC06A03FC089A0EF197E2A87F1D8107": {
+              "enabled": true,
+              "name": "fixAMMOverflowOffer",
+              "supported": true
+            },
+            "138B968F25822EFBF54C00F97031221C47B1EAB8321D93C7C2AEAF85F04EC5DF": {
+              "enabled": false,
+              "name": "TokenEscrow",
+              "supported": true
+            },
+            "1562511F573A19AE9BD103B5D6B9E01B3B46805AEC5D3C4805C902B514399146": {
+              "enabled": false,
+              "name": "CryptoConditions",
+              "supported": true
+            },
+            "157D2D480E006395B76F948E3E07A45A05FE10230D88A7993C71F97AE4B1F2D1": {
+              "enabled": true,
+              "name": "Checks",
+              "supported": true
+            },
+            "15D61F0C6DB6A2F86BCF96F1E2444FEC54E705923339EC175BD3E517C8B3FF91": {
+              "enabled": true,
+              "name": "fixDisallowIncomingV1",
+              "supported": true
+            },
+            "1CB67D082CF7D9102412D34258CEDB400E659352D3B207348889297A6D90F5EF": {
+              "enabled": true,
+              "name": "Credentials",
+              "supported": true
+            },
+            "1D3463A5891F9E589C5AE839FFAC4A917CE96197098A1EF22304E1BC5B98A454": {
+              "enabled": false,
+              "name": "fix1528",
+              "supported": true
+            },
+            "1E7ED950F2F13C4F8E2A54103B74D57D5D298FFDBD005936164EE9E6484C438C": {
+              "enabled": true,
+              "name": "fixAMMv1_2",
+              "supported": true
+            },
+            "1F4AFA8FA1BC8827AD4C0F682C03A8B671DCDF6B5C4DE36D44243A684103EF88": {
+              "enabled": true,
+              "name": "HardenedValidations",
+              "supported": true
+            },
+            "213D9785EF1C34BC0F99BF190299B814AE0563E047DC457C9CB53B6FC02D4B70": {
+              "enabled": false,
+              "name": "PF_ValidatorVoteTracking",
+              "supported": true
+            },
+            "25BA44241B3BD880770BFA4DA21C7180576831855368CBEC6A3154FDE4A7676E": {
+              "enabled": true,
+              "name": "fix1781",
+              "supported": true
+            },
+            "27CD95EE8E1E5A537FF2F89B6CEB7C622E78E9374EBD7DCBEDFAE21CD6F16E0A": {
+              "enabled": true,
+              "name": "fixReducedOffersV1",
+              "supported": true
+            },
+            "2BF037D90E1B676B17592A8AF55E88DB465398B4B597AE46EECEE1399AB05699": {
+              "enabled": false,
+              "name": "fixXChainRewardRounding",
+              "supported": true
+            },
+            "2CD5286D8D687E98B41102BDD797198E81EA41DF7BD104E6561FEB104EFF2561": {
+              "enabled": true,
+              "name": "fixTakerDryOfferRemoval",
+              "supported": true
+            },
+            "2E2FB9CF8A44EB80F4694D38AADAE9B8B7ADAFD2F092E10068E61C98C4F092B0": {
+              "enabled": true,
+              "name": "fixUniversalNumber",
+              "supported": true
+            },
+            "3012E8230864E95A58C60FD61430D7E1B4D3353195F2981DC12B0C7C0950FFAC": {
+              "enabled": false,
+              "name": "FlowCross",
+              "supported": true
+            },
+            "30CD365592B8EE40489BA01AE2F7555CAC9C983145871DC82A42A31CF5BAE7D9": {
+              "enabled": true,
+              "name": "DeletableAccounts",
+              "supported": true
+            },
+            "31E0DA76FB8FB527CADCDF0E61CB9C94120966328EFA9DCA202135BAF319C0BA": {
+              "enabled": true,
+              "name": "fixReducedOffersV2",
+              "supported": true
+            },
+            "32A122F1352A4C7B3A6D790362CC34749C5E57FCE896377BFDC6CCD14F6CD627": {
+              "enabled": true,
+              "name": "NonFungibleTokensV1_1",
+              "supported": true
+            },
+            "32B8614321F7E070419115ABEAB1742EA20F3E3AF34432B5E2F474F8083260DC": {
+              "enabled": false,
+              "name": "fixTokenEscrowV1",
+              "supported": true
+            },
+            "3318EA0CF0755AF15DAC19F2B5C5BCBFF4B78BDD57609ACCAABE2C41309B051A": {
+              "enabled": true,
+              "name": "fixFillOrKill",
+              "supported": true
+            },
+            "35291ADD2D79EB6991343BDA0912269C817D0F094B02226C1C14AD2858962ED4": {
+              "enabled": true,
+              "name": "fixAMMv1_1",
+              "supported": true
+            },
+            "36799EA497B1369B170805C078AEFE6188345F9B3E324C21E9CA3FF574E3C3D6": {
+              "enabled": false,
+              "name": "fixNFTokenNegOffer",
+              "supported": true
+            },
+            "3C43D9A973AA4443EF3FC38E42DD306160FBFFDAB901CD8BAA15D09F2597EB87": {
+              "enabled": false,
+              "name": "NonFungibleTokensV1",
+              "supported": true
+            },
+            "3CBC5C4E630A1B82380295CDA84B32B49DD066602E74E39B85EF64137FA65194": {
+              "enabled": true,
+              "name": "DepositPreauth",
+              "supported": true
+            },
+            "41765F664A8D67FF03DDB1C1A893DE6273690BA340A6C2B07C8D29D0DD013D3A": {
+              "enabled": false,
+              "name": "fixDirectoryLimit",
+              "supported": true
+            },
+            "42426C4D4F1009EE67080A9B7965B44656D7714D104A72F9B4369F97ABF044EE": {
+              "enabled": false,
+              "name": "FeeEscalation",
+              "supported": true
+            },
+            "42EEA5E28A97824821D4EF97081FE36A54E9593C6E4F20CBAE098C69D2E072DC": {
+              "enabled": false,
+              "name": "fix1373",
+              "supported": true
+            },
+            "452F5906C46D46F407883344BFDD90E672B672C5E9943DB4891E3A34FEEEB9DB": {
+              "enabled": true,
+              "name": "fixSTAmountCanonicalize",
+              "supported": true
+            },
+            "47C3002ABA31628447E8E9A8B315FAA935CE30183F9A9B86845E469CA2CDC3DF": {
+              "enabled": true,
+              "name": "DisallowIncoming",
+              "supported": true
+            },
+            "4C97EBA926031A7CF7D7B36FDE3ED66DDA5421192D63DE53FFB46E43B9DC8373": {
+              "enabled": false,
+              "name": "MultiSign",
+              "supported": true
+            },
+            "4F46DF03559967AC60F2EB272FEFE3928A7594A45FF774B87A7E540DB0F8F068": {
+              "enabled": true,
+              "name": "fixAmendmentMajorityCalc",
+              "supported": true
+            },
+            "532651B4FD58DF8922A49BA101AB3E996E5BFBF95A913B3E392504863E63B164": {
+              "enabled": false,
+              "name": "TickSize",
+              "supported": true
+            },
+            "565B90CA1AB2B9D42208ED10884188C64F9E19083DECB9634AAF06EB03299509": {
+              "enabled": false,
+              "name": "LendingProtocol",
+              "supported": true
+            },
+            "56857392BEADCE1E4B0D754A91B73F1D053657AF4FDD585455D4FFBCD5307BE0": {
+              "enabled": false,
+              "name": "PF_AccountExclusion",
+              "supported": true
+            },
+            "56B241D7A43D40354D02A9DC4C8DF5C7A1F930D92A9035C4E12291B3CA3E1C2B": {
+              "enabled": true,
+              "name": "Clawback",
+              "supported": true
+            },
+            "586480873651E106F1D6339B0C4A8945BA705A777F3F4524626FF1FC07EFE41D": {
+              "enabled": true,
+              "name": "MultiSignReserve",
+              "supported": true
+            },
+            "58BE9B5968C4DA7C59BA900961828B113E5490699B21877DEF9A31E9D0FE5D5F": {
+              "enabled": true,
+              "name": "fix1623",
+              "supported": true
+            },
+            "5D08145F0A4983F23AFFFF514E83FAD355C5ABFBB6CAB76FB5BC8519FF5F33BE": {
+              "enabled": true,
+              "name": "fix1515",
+              "supported": true
+            },
+            "5E9586DB3D765B4C5794658FB6BB385071E9838DF4016027E6E26820C8526724": {
+              "enabled": false,
+              "name": "fixAMMClawbackRounding",
+              "supported": true
+            },
+            "6143A27B71F7DAF9330ECA7C5EC3D54C8083A4FDEF7016737EEC06AB61E82EE0": {
+              "enabled": false,
+              "name": "fixIncludeKeyletFields",
+              "supported": true
+            },
+            "621A0B264970359869E3C0363A899909AAB7A887C8B73519E4ECF952D33258A8": {
+              "enabled": true,
+              "name": "fixPayChanRecipientOwnerDir",
+              "supported": true
+            },
+            "677E401A423E3708363A36BA8B3A7D019D21AC5ABD00387BDBEA6BDE4C91247E": {
+              "enabled": false,
+              "name": "PermissionedDEX",
+              "supported": true
+            },
+            "6781F8368C4771B83E8B821D88F580202BCB4228075297B19E4FDC5233F1EFDC": {
+              "enabled": false,
+              "name": "TrustSetAuth",
+              "supported": true
+            },
+            "67A34F2CF55BFC0F93AACD5B281413176FEE195269FA6D95219A2DF738671172": {
+              "enabled": true,
+              "name": "fix1513",
+              "supported": true
+            },
+            "6C92211186613F9647A89DFFBAB8F94C99D4C7E956D495270789128569177DA1": {
+              "enabled": false,
+              "name": "fix1512",
+              "supported": true
+            },
+            "7117E2EC2DBF119CA55181D69819F1999ECEE1A0225A7FD2B9ED47940968479C": {
+              "enabled": true,
+              "name": "fix1571",
+              "supported": true
+            },
+            "726F944886BCDF7433203787E93DD9AA87FAB74DFE3AF4785BA03BEFC97ADA1F": {
+              "enabled": true,
+              "name": "AMMClawback",
+              "supported": true
+            },
+            "73761231F7F3D94EC3D8C63D91BDD0D89045C6F71B917D1925C01253515A6669": {
+              "enabled": true,
+              "name": "fixNonFungibleTokensV1_2",
+              "supported": true
+            },
+            "740352F2412A9909880C23A559FCECEDA3BE2126FED62FC7660D628A06927F11": {
+              "enabled": true,
+              "name": "Flow",
+              "supported": true
+            },
+            "755C971C29971C9F20C6F080F2ED96F87884E40AD19554A5EBECDCEC8A1F77FE": {
+              "enabled": true,
+              "name": "fixEmptyDID",
+              "supported": true
+            },
+            "75A7E01C505DD5A179DFE3E000A9B6F1EDDEB55A12F95579A23E15B15DC8BE5A": {
+              "enabled": true,
+              "name": "ImmediateOfferKilled",
+              "supported": true
+            },
+            "763C37B352BE8C7A04E810F8E462644C45AFEAD624BF3894A08E5C917CF9FF39": {
+              "enabled": true,
+              "name": "fixEnforceNFTokenTrustline",
+              "supported": true
+            },
+            "7BB62DC13EC72B775091E9C71BF8CF97E122647693B50C5E87A80DFD6FCFAC50": {
+              "enabled": true,
+              "name": "fixPreviousTxnID",
+              "supported": true
+            },
+            "7CA70A7674A26FA517412858659EBC7EDEEF7D2D608824464E6FDEFD06854E14": {
+              "enabled": true,
+              "name": "fixAMMv1_3",
+              "supported": true
+            },
+            "81BD2619B6B3C8625AC5D0BC01DE17F06C3F0AB95C7C87C93715B87A4FD240D8": {
+              "enabled": false,
+              "name": "SingleAssetVault",
+              "supported": true
+            },
+            "83FD6594FF83C1D105BD2B41D7E242D86ECB4A8220BD9AF4DA35CB0F69E39B2A": {
+              "enabled": true,
+              "name": "fixFrozenLPTokenTransfer",
+              "supported": true
+            },
+            "86E83A7D2ECE3AD5FA87AB2195AE015C950469ABF0B72EAACED318F74886AE90": {
+              "enabled": false,
+              "name": "CryptoConditionsSuite",
+              "supported": true
+            },
+            "89308AF3B8B10B7192C4E613E1D2E4D9BA64B2EE2D5232402AE82A6A7220D953": {
+              "enabled": true,
+              "name": "fixQualityUpperBound",
+              "supported": true
+            },
+            "8CC0774A3BF66D1D22E76BBDA8E8A232E6B6313834301B3B23E8601196AE6455": {
+              "enabled": true,
+              "name": "AMM",
+              "supported": true
+            },
+            "8EC4304A06AF03BE953EA6EDA494864F6F3F30AA002BABA35869FBB8C6AE5D52": {
+              "enabled": true,
+              "name": "fixInvalidTxFlags",
+              "supported": true
+            },
+            "8F81B066ED20DAECA20DF57187767685EEF3980B228E0667A650BAF24426D3B4": {
+              "enabled": true,
+              "name": "fixCheckThreading",
+              "supported": true
+            },
+            "9196110C23EA879B4229E51C286180C7D02166DA712559F634372F5264D0EC59": {
+              "enabled": true,
+              "name": "fixInnerObjTemplate2",
+              "supported": true
+            },
+            "93E516234E35E08CA689FA33A6D38E103881F8DCB53023F728C307AA89D515A7": {
+              "enabled": true,
+              "name": "XRPFees",
+              "supported": true
+            },
+            "950AE2EA4654E47F04AA8739C0B214E242097E802FD372D24047A89AB1F5EC38": {
+              "enabled": false,
+              "name": "MPTokensV1",
+              "supported": true
+            },
+            "955DF3FA5891195A9DAEFA1DDC6BB244B545DDE1BAA84CBB25D5F12A8DA68A0C": {
+              "enabled": true,
+              "name": "TicketBatch",
+              "supported": true
+            },
+            "96FD2F293A519AE1DB6F8BED23E4AD9119342DA7CB6BAFD00953D16C54205D8B": {
+              "enabled": true,
+              "name": "PriceOracle",
+              "supported": true
+            },
+            "98DECF327BF79997AEC178323AD51A830E457BFC6D454DAF3E46E5EC42DC619F": {
+              "enabled": true,
+              "name": "CheckCashMakesTrustLine",
+              "supported": true
+            },
+            "A730EB18A9D4BB52502C898589558B4CCEB4BE10044500EE5581137A2E80E849": {
+              "enabled": false,
+              "name": "PermissionedDomains",
+              "supported": true
+            },
+            "AB8D932A5F338903FE5BCBD80B611FFED70839ABA3170E9CE01D947C0EDEDCF2": {
+              "enabled": false,
+              "name": "fixMPTDeliveredAmount",
+              "supported": true
+            },
+            "AE35ABDEFBDE520372B31C957020B34A7A4A9DC3115A69803A44016477C84D6E": {
+              "enabled": true,
+              "name": "fixNFTokenRemint",
+              "supported": true
+            },
+            "AF8DF7465C338AE64B1E937D6C8DA138C0D63AD5134A68792BBBE1F63356C422": {
+              "enabled": true,
+              "name": "FlowSortStrands",
+              "supported": true
+            },
+            "B2A4DB846F0891BF2C76AB2F2ACC8F5B4EC64437135C6E56F3F859DE5FFD5856": {
+              "enabled": true,
+              "name": "ExpandedSignerList",
+              "supported": true
+            },
+            "B32752F7DCC41FB86534118FC4EEC8F56E7BD0A7DB60FD73F93F257233C08E3A": {
+              "enabled": true,
+              "name": "fixEnforceNFTokenTrustlineV2",
+              "supported": true
+            },
+            "B4D44CC3111ADD964E846FC57760C8B50FFCD5A82C86A72756F6B058DDDF96AD": {
+              "enabled": false,
+              "name": "fix1201",
+              "supported": true
+            },
+            "B4E4F5D2D6FB84DF7399960A732309C9FD530EAE5941838160042833625A6076": {
+              "enabled": true,
+              "name": "NegativeUNL",
+              "supported": true
+            },
+            "B6B3EEDC0267AB50491FDC450A398AF30DBCD977CECED8BEF2499CAB5DAC19E2": {
+              "enabled": true,
+              "name": "fixRmSmallIncreasedQOffers",
+              "supported": true
+            },
+            "B9E739B8296B4A1BB29BE990B17D66E21B62A300A909F25AC55C22D6C72E1F9D": {
+              "enabled": false,
+              "name": "fix1523",
+              "supported": true
+            },
+            "C1CE18F2A268E6A849C27B3DE485006771B4C01B2FCEC4F18356FE92ECD6BB74": {
+              "enabled": true,
+              "name": "DynamicNFT",
+              "supported": true
+            },
+            "C393B3AEEBF575E475F0C60D5E4241B2070CC4D0EB6C4846B1A07508FAEFC485": {
+              "enabled": true,
+              "name": "fixInnerObjTemplate",
+              "supported": true
+            },
+            "C4483A1896170C66C098DEA5B0E024309C60DC960DE5F01CD7AF986AA3D9AD37": {
+              "enabled": true,
+              "name": "fixMasterKeyAsRegularKey",
+              "supported": true
+            },
+            "C7981B764EC4439123A86CC7CCBA436E9B3FF73B3F10A0AE51882E404522FC41": {
+              "enabled": true,
+              "name": "fixNFTokenPageLinks",
+              "supported": true
+            },
+            "C98D98EE9616ACD36E81FDEB8D41D349BF5F1B41DD64A0ABC1FE9AA5EA267E9C": {
+              "enabled": false,
+              "name": "XChainBridge",
+              "supported": true
+            },
+            "CA7C02118BA27599528543DFE77BA6838D1B0F43B447D4D7F53523CE6A0E9AC2": {
+              "enabled": true,
+              "name": "fix1543",
+              "supported": true
+            },
+            "CC5ABAE4F3EC92E94A59B1908C2BE82D2228B6485C00AFF8F22DF930D89C194E": {
+              "enabled": false,
+              "name": "SortedDirectories",
+              "supported": true
+            },
+            "D3456A862DC07E382827981CA02E21946E641877F19B8889031CC57FDCAC83E2": {
+              "enabled": false,
+              "name": "fixPayChanCancelAfter",
+              "supported": true
+            },
+            "DAF3A6EB04FA5DC51E8E4F23E9B7022B693EFA636F23F22664746C77B5786B23": {
+              "enabled": true,
+              "name": "DeepFreeze",
+              "supported": true
+            },
+            "DB432C3A09D9D5DFC7859F39AE5FF767ABC59AED0A9FB441E83B814D8946C109": {
+              "enabled": true,
+              "name": "DID",
+              "supported": true
+            },
+            "DC9CA96AEA1DCF83E527D1AFC916EFAF5D27388ECA4060A88817C1238CAEE0BF": {
+              "enabled": false,
+              "name": "EnforceInvariants",
+              "supported": true
+            },
+            "DF8B4536989BDACE3F934F29423848B9F1D76D09BE6A1FCFE7E7F06AA26ABEAD": {
+              "enabled": true,
+              "name": "fixRemoveNFTokenAutoTrustLine",
+              "supported": true
+            },
+            "E2E6F2866106419B88C50045ACE96368558C345566AC8F2BDF5A5B5587F0E6FA": {
+              "enabled": false,
+              "name": "fix1368",
+              "supported": true
+            },
+            "EE3CF852F0506782D05E65D49E5DCC3D16D50898CD1B646BAE274863401CC3CE": {
+              "enabled": true,
+              "name": "NFTokenMintOffer",
+              "supported": true
+            },
+            "F1ED6B4A411D8B872E65B9DCB4C8B100375B0DD3D62D07192E011D6D7F339013": {
+              "enabled": true,
+              "name": "fixTrustLinesToSelf",
+              "supported": true
+            },
+            "F64E1EABBE79D55B3BB82020516CEC2C582A98A6BFE20FBE9BB6A0D233418064": {
+              "enabled": true,
+              "name": "DepositAuth",
+              "supported": true
+            },
+            "FBD513F1B893AC765B78F250E6FFA6A11B573209D1842ADC787C850696741288": {
+              "enabled": true,
+              "name": "fix1578",
+              "supported": true
+            },
+            "FF2D1E13CF6D22427111B967BD504917F63A900CECD320D6FD3AC9FA90344631": {
+              "enabled": false,
+              "name": "fixPriceOracleOrder",
+              "supported": true
+            }
+          },
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 13524,
+        "stored": "full"
+      },
+      "result_keys": [
+        "features",
+        "status"
+      ]
+    },
+    "fee": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 742,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "fee",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "current_ledger_size": "0",
+          "current_queue_size": "0",
+          "drops": {
+            "base_fee": "10",
+            "median_fee": "5000",
+            "minimum_fee": "10",
+            "open_ledger_fee": "10"
+          },
+          "expected_ledger_size": "32",
+          "ledger_current_index": 8023102,
+          "levels": {
+            "median_level": "128000",
+            "minimum_level": "256",
+            "open_ledger_level": "256",
+            "reference_level": "256"
+          },
+          "max_queue_size": "2000",
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 390,
+        "stored": "full"
+      },
+      "result_keys": [
+        "current_ledger_size",
+        "current_queue_size",
+        "drops",
+        "expected_ledger_size",
+        "ledger_current_index",
+        "levels",
+        "max_queue_size",
+        "status"
+      ]
+    },
+    "fetch_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "fetch_info",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "gateway_balances": {
+      "api_version": 2,
+      "attempts": 3,
+      "duration_ms": 953,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "gateway_balances",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "hotwallet": [
+            "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+          ]
+        }
+      ],
+      "response": {
+        "result": {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_current_index": 8023105,
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 135,
+        "stored": "full"
+      },
+      "result_keys": [
+        "account",
+        "ledger_current_index",
+        "status",
+        "validated"
+      ]
+    },
+    "get_aggregate_price": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 986,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Missing field 'oracles'.",
+      "method": "get_aggregate_price",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Missing field 'oracles'.",
+          "request": {
+            "command": "get_aggregate_price"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 167,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "get_counts": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "get_counts",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "ledger": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 708,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger",
+      "outcome": "success",
+      "params": [
+        {
+          "expand": false,
+          "ledger_index": "validated",
+          "owner_funds": false,
+          "transactions": false
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger": {
+            "account_hash": "4F9604A6A19CF4AA0F6B743CA09097452606032F3847F76FF2DF8B3E05EEFAAA",
+            "close_flags": 0,
+            "close_time": 847918720,
+            "close_time_human": "2026-Nov-13 20:58:40.000000000 UTC",
+            "close_time_iso": "2026-11-13T20:58:40Z",
+            "close_time_resolution": 10,
+            "closed": true,
+            "ledger_hash": "5A374AABF2FA642F42AC74DDD4F8E91D5CDF7A14935C5FD54504750929AC165B",
+            "ledger_index": "8023105",
+            "parent_close_time": 847918712,
+            "parent_hash": "03B2C663444856E3331F8110B2DF3E67AE03D386BACE4B7B91924F35336A7439",
+            "total_coins": "99999999967426262",
+            "transaction_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "ledger_hash": "5A374AABF2FA642F42AC74DDD4F8E91D5CDF7A14935C5FD54504750929AC165B",
+          "ledger_index": 8023105,
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 793,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger",
+        "ledger_hash",
+        "ledger_index",
+        "status",
+        "validated"
+      ]
+    },
+    "ledger_accept": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "ledger_accept",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "ledger_cleaner": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "ledger_cleaner",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "ledger_closed": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 922,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger_closed",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "ledger_hash": "4E5730493F7EA790B6232F7E741527454535E099B76CE65F28FCD4CCD08EB4FF",
+          "ledger_index": 8023107,
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 141,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger_hash",
+        "ledger_index",
+        "status"
+      ]
+    },
+    "ledger_current": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 1003,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger_current",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "ledger_current_index": 8023109,
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 66,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger_current_index",
+        "status"
+      ]
+    },
+    "ledger_data": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1017,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger_data",
+      "outcome": "success",
+      "params": [
+        {
+          "ledger_index": "validated",
+          "limit": 5
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger": {
+            "account_hash": "EB245F6A55D2FFD8669CCABB6499C6C5F058598CE143377328086758109ABBE1",
+            "close_flags": 0,
+            "close_time": 847918730,
+            "close_time_human": "2026-Nov-13 20:58:50.000000000 UTC",
+            "close_time_iso": "2026-11-13T20:58:50Z",
+            "close_time_resolution": 10,
+            "closed": true,
+            "ledger_hash": "01CE9F6DC44D3EB2FC965D394ED4DEAD0518BBF4A8DCD5A90775667D33B31D61",
+            "ledger_index": "8023108",
+            "parent_close_time": 847918722,
+            "parent_hash": "4E5730493F7EA790B6232F7E741527454535E099B76CE65F28FCD4CCD08EB4FF",
+            "total_coins": "99999999967426262",
+            "transaction_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "ledger_hash": "01CE9F6DC44D3EB2FC965D394ED4DEAD0518BBF4A8DCD5A90775667D33B31D61",
+          "ledger_index": 8023108,
+          "marker": "002C943C1D6AE00C615BDADE3DB846B6AB527EDD082B0F3E63D3189E01B5479B",
+          "state": [
+            {
+              "Account": "rM4y7PduTib1tt7bm6q2LCoV9JeGY7ZeqW",
+              "Balance": "317253301",
+              "BurnedNFTokens": 29,
+              "FirstNFTokenSequence": 7991353,
+              "Flags": 0,
+              "LedgerEntryType": "AccountRoot",
+              "MintedNFTokens": 52,
+              "OwnerCount": 1,
+              "PreviousTxnID": "66F1CAA74DC137F1F1CE6CBBE3E0B38FEBB66C8EF263873B8C27DD13C64DF85E",
+              "PreviousTxnLgrSeq": 8023074,
+              "Sequence": 7991664,
+              "index": "0017F0567F5CB306D2A1385F642A1472BC1FD1EAE8CD76A505B0D6B357D408A8"
+            },
+            {
+              "Account": "rnQsb9NN4BmXh62mcoJMM1trri4nSZtaAn",
+              "Balance": "14999990",
+              "BurnedNFTokens": 17,
+              "FirstNFTokenSequence": 1238200,
+              "Flags": 0,
+              "LedgerEntryType": "AccountRoot",
+              "MintedNFTokens": 17,
+              "OwnerCount": 0,
+              "PreviousTxnID": "4CFBA2B12E09A313C7CD3807BF053E1D7941D1B9914A67583D4CA4AD4F2A273C",
+              "PreviousTxnLgrSeq": 1290071,
+              "Sequence": 1238705,
+              "index": "001888C47C0D105C80F26E19CE6297A9293932E5816CF97E3768BA8FEEEA374C"
+            },
+            {
+              "Account": "r3JxciUe62jJpijRAQC4K3n3gZauazEdsU",
+              "Balance": "14999990",
+              "BurnedNFTokens": 68,
+              "FirstNFTokenSequence": 3572794,
+              "Flags": 0,
+              "LedgerEntryType": "AccountRoot",
+              "MintedNFTokens": 68,
+              "OwnerCount": 0,
+              "PreviousTxnID": "E480CBE54BCF6547515F9E4F5EE08EAA9BCE2605645243DFAE77426C4E5CC611",
+              "PreviousTxnLgrSeq": 3645310,
+              "Sequence": 3573637,
+              "index": "001F87B867C084DE7207DFDA7331C149B49679C062C361018355C32D4C86A06B"
+            },
+            {
+              "Account": "rM2VeF9uPoREFi8vddNkydiGHBMSvUYsqz",
+              "Balance": "14999990",
+              "BurnedNFTokens": 167,
+              "FirstNFTokenSequence": 5542795,
+              "Flags": 0,
+              "LedgerEntryType": "AccountRoot",
+              "MintedNFTokens": 167,
+              "OwnerCount": 0,
+              "PreviousTxnID": "B07D7A7EA482A36AD72C4454C469D7E9A054105932E1162A342B4174D6427AF5",
+              "PreviousTxnLgrSeq": 5620425,
+              "Sequence": 5543664,
+              "index": "002AF81355A447B3DC3DC52EE4E344BE5EC1C4605300F7EE11A7D1EE3142AE29"
+            },
+            {
+              "Account": "rstKJeN54iFt6xVzkr1dHJWUCUvP3fCwQE",
+              "Balance": "14999990",
+              "BurnedNFTokens": 59,
+              "FirstNFTokenSequence": 4813004,
+              "Flags": 0,
+              "LedgerEntryType": "AccountRoot",
+              "MintedNFTokens": 59,
+              "OwnerCount": 0,
+              "PreviousTxnID": "DE4101CE48049463C4EC630D1FBF52757E38A2C47132E759C4485D9A4CA2560F",
+              "PreviousTxnLgrSeq": 4875744,
+              "Sequence": 4813670,
+              "index": "002C28957ADC70B599EB0B50CABE828C92F6D05E39F84D274DDE1511208D67E3"
+            }
+          ],
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 3020,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger",
+        "ledger_hash",
+        "ledger_index",
+        "marker",
+        "state",
+        "status",
+        "validated"
+      ]
+    },
+    "ledger_entry": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 785,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger_entry",
+      "outcome": "success",
+      "params": [
+        {
+          "account_root": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "ledger_index": "validated"
+        }
+      ],
+      "response": {
+        "result": {
+          "index": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E",
+          "ledger_hash": "01CE9F6DC44D3EB2FC965D394ED4DEAD0518BBF4A8DCD5A90775667D33B31D61",
+          "ledger_index": 8023108,
+          "node": {
+            "Account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "Balance": "16697349929",
+            "FirstNFTokenSequence": 7755239,
+            "Flags": 0,
+            "LedgerEntryType": "AccountRoot",
+            "MintedNFTokens": 6,
+            "OwnerCount": 1,
+            "PreviousTxnID": "2FA84094723736800A5E3109A17FE7579A3EF87E4F390F0DD279591AE2768633",
+            "PreviousTxnLgrSeq": 8022102,
+            "Sequence": 7755245,
+            "index": "FEA9BB72F392BE5B10C65B359C3E7821A8DBA608EDC9FB3B058A11809281E12E"
+          },
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 652,
+        "stored": "full"
+      },
+      "result_keys": [
+        "index",
+        "ledger_hash",
+        "ledger_index",
+        "node",
+        "status",
+        "validated"
+      ]
+    },
+    "ledger_header": {
+      "api_version": 1,
+      "attempts": 1,
+      "duration_ms": 959,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ledger_header",
+      "outcome": "success",
+      "params": [
+        {
+          "api_version": 1,
+          "ledger_index": "validated"
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger": {
+            "account_hash": "A13960EBD40CFE7DA4783FDE43CF8AC7759EE4E1444CEFEB54938FA51A5C67E6",
+            "close_flags": 0,
+            "close_time": 847918731,
+            "close_time_human": "2026-Nov-13 20:58:51.000000000 UTC",
+            "close_time_iso": "2026-11-13T20:58:51Z",
+            "close_time_resolution": 10,
+            "closed": true,
+            "ledger_hash": "A49D9DDCB62DBC4C22689D5CF035D0DC07F2220E866EADD0E1B402978DBEF152",
+            "ledger_index": "8023109",
+            "parent_close_time": 847918730,
+            "parent_hash": "01CE9F6DC44D3EB2FC965D394ED4DEAD0518BBF4A8DCD5A90775667D33B31D61",
+            "total_coins": "99999999967426232",
+            "transaction_hash": "FC22552C3943FA72F0DCB2A35E0DC8956A21CDE4B73B7B5268E6BB2A0B8346EB"
+          },
+          "ledger_data": "007A6C45016345785B98F6B801CE9F6DC44D3EB2FC965D394ED4DEAD0518BBF4A8DCD5A90775667D33B31D61FC22552C3943FA72F0DCB2A35E0DC8956A21CDE4B73B7B5268E6BB2A0B8346EBA13960EBD40CFE7DA4783FDE43CF8AC7759EE4E1444CEFEB54938FA51A5C67E6328A368A328A368B0A00",
+          "ledger_hash": "A49D9DDCB62DBC4C22689D5CF035D0DC07F2220E866EADD0E1B402978DBEF152",
+          "ledger_index": 8023109,
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1048,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger",
+        "ledger_data",
+        "ledger_hash",
+        "ledger_index",
+        "status",
+        "validated"
+      ]
+    },
+    "ledger_request": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "ledger_request",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "log_level": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "log_level",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "logrotate": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "logrotate",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "manifest": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1017,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "manifest",
+      "outcome": "success",
+      "params": [
+        {
+          "public_key": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE"
+        }
+      ],
+      "response": {
+        "result": {
+          "details": {
+            "ephemeral_key": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE",
+            "master_key": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE"
+          },
+          "requested": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE",
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 258,
+        "stored": "full"
+      },
+      "result_keys": [
+        "details",
+        "requested",
+        "status"
+      ]
+    },
+    "nft_buy_offers": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 844,
+      "error_code": "objectNotFound",
+      "error_code_num": 92,
+      "error_message": "The requested object was not found.",
+      "method": "nft_buy_offers",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "nft_id": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7"
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "objectNotFound",
+          "error_code": 92,
+          "error_message": "The requested object was not found.",
+          "request": {
+            "command": "nft_buy_offers",
+            "nft_id": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 252,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "nft_sell_offers": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 835,
+      "error_code": "objectNotFound",
+      "error_code_num": 92,
+      "error_message": "The requested object was not found.",
+      "method": "nft_sell_offers",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "nft_id": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7"
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "objectNotFound",
+          "error_code": 92,
+          "error_message": "The requested object was not found.",
+          "request": {
+            "command": "nft_sell_offers",
+            "nft_id": "00090000B883BBBA251BAF7A53D5E2A51E44969FF3A2B5644E3AF682007655E7"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 253,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "noripple_check": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 750,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "noripple_check",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "limit": 2,
+          "role": "gateway",
+          "transactions": false
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger_current_index": 8023112,
+          "problems": [
+            "You should immediately set your default ripple flag"
+          ],
+          "status": "success",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 155,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger_current_index",
+        "problems",
+        "status",
+        "validated"
+      ]
+    },
+    "owner_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 989,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "owner_info",
+      "outcome": "success",
+      "params": [
+        {
+          "account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "accepted": {},
+          "current": {},
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 64,
+        "stored": "full"
+      },
+      "result_keys": [
+        "accepted",
+        "current",
+        "status"
+      ]
+    },
+    "path_find": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 862,
+      "error_code": "noEvents",
+      "error_code_num": 7,
+      "error_message": "Current transport does not support events.",
+      "method": "path_find",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "destination_account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+          "destination_amount": {
+            "currency": "USD",
+            "issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "value": "1"
+          },
+          "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "subcommand": "create"
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "noEvents",
+          "error_code": 7,
+          "error_message": "Current transport does not support events.",
+          "request": {
+            "command": "path_find",
+            "destination_account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+            "destination_amount": {
+              "currency": "USD",
+              "issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+              "value": "1"
+            },
+            "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "subcommand": "create"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 415,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "peer_reservations_add": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "peer_reservations_add",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "peer_reservations_del": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "peer_reservations_del",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "peer_reservations_list": {
+      "api_version": 2,
+      "attempts": 3,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "peer_reservations_list",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "peers": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "peers",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "ping": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 822,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ping",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "ip": "104.29.200.238",
+          "role": "proxied",
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 76,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ip",
+        "role",
+        "status"
+      ]
+    },
+    "print": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "print",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "random": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 808,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "random",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "random": "A6EFD8F9E73BF33DF20351B34A84E9D3EE48DA165257C93B5D2E2EE28FFFF694",
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 111,
+        "stored": "full"
+      },
+      "result_keys": [
+        "random",
+        "status"
+      ]
+    },
+    "ripple_path_find": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 748,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "ripple_path_find",
+      "outcome": "success",
+      "params": [
+        {
+          "destination_account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+          "destination_amount": {
+            "currency": "USD",
+            "issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "value": "1"
+          },
+          "ledger_index": "validated",
+          "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z"
+        }
+      ],
+      "response": {
+        "result": {
+          "alternatives": [],
+          "destination_account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+          "destination_amount": {
+            "currency": "USD",
+            "issuer": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+            "value": "1"
+          },
+          "destination_currencies": [
+            "XRP"
+          ],
+          "full_reply": true,
+          "ledger_hash": "4B77A14CC3AFE446C708F22C09FEF551DAAA1BC0BD1BEBA5C26BF6CCA9B274AD",
+          "ledger_index": 8023118,
+          "source_account": "rHFd9HgQXaegmSj5oudYEtxspC23xKuJ5z",
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 457,
+        "stored": "full"
+      },
+      "result_keys": [
+        "alternatives",
+        "destination_account",
+        "destination_amount",
+        "destination_currencies",
+        "full_reply",
+        "ledger_hash",
+        "ledger_index",
+        "source_account",
+        "status",
+        "validated"
+      ]
+    },
+    "server_definitions": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1084,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "server_definitions",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_truncated": true,
+        "head": "{\"result\": {\"FIELDS\": [[\"Generic\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 0, \"type\": \"Unknown\"}], [\"Invalid\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": -1, \"type\": \"Unknown\"}], [\"ObjectEndMarker\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"STObject\"}], [\"ArrayEndMarker\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"STArray\"}], [\"taker_gets_funded\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 258, \"type\": \"Amount\"}], [\"taker_pays_funded\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 259, \"type\": \"Amount\"}], [\"BatchSigners\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"STArray\"}], [\"RawTransactions\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"STArray\"}], [\"Permissions\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"STArray\"}], [\"Majorities\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"STArray\"}], [\"AdditionalBooks\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"STArray\"}], [\"VoteSlots\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"STArray\"}], [\"Hooks\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"STArray\"}], [\"NFTokens\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"STArray\"}], [\"Memos\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"STArray\"}], [\"AffectedNodes\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"STArray\"}], [\"Sufficient\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"STArray\"}], [\"Necessary\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 6, \"type\": \"STArray\"}], [\"Template\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"STArray\"}], [\"SignerEntries\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"STArray\"}], [\"Signers\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"STArray\"}], [\"XChainCreateAccountAttestationCollectionElement\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"STObject\"}], [\"Signer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"STObject\"}], [\"Permission\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 15, \"type\": \"STObject\"}], [\"Hook\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 14, \"type\": \"STObject\"}], [\"EmitDetails\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"STObject\"}], [\"NFToken\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"STObject\"}], [\"SignerEntry\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"STObject\"}], [\"Memo\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"STObject\"}], [\"TemplateEntry\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"STObject\"}], [\"NewFields\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"STObject\"}], [\"FinalFields\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"STObject\"}], [\"PreviousFields\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 6, \"type\": \"STObject\"}], [\"ModifiedNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"STObject\"}], [\"DeletedNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"STObject\"}], [\"CreatedNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"STObject\"}], [\"TransactionMetaData\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"STObject\"}], [\"QuoteAsset\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"Currency\"}], [\"BaseAsset\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Currency\"}], [\"Paths\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"PathSet\"}], [\"CredentialIDs\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 5, \"type\": \"Vector256\"}], [\"NFTokenOffers\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 4, \"type\": \"Vector256\"}], [\"Amendments\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 3, \"type\": \"Vector256\"}], [\"Hashes\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 2, \"type\": \"Vector256\"}], [\"Indexes\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 1, \"type\": \"Vector256\"}], [\"ExclusionRemove\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 202, \"type\": \"AccountID\"}], [\"ExclusionAdd\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 201, \"type\": \"AccountID\"}], [\"Counterparty\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 26, \"type\": \"AccountID\"}], [\"Borrower\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 25, \"type\": \"AccountID\"}], [\"Subject\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 24, \"type\": \"AccountID\"}], [\"IssuingChainDoor\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 23, \"type\": \"AccountID\"}], [\"HookAccount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 16, \"type\": \"AccountID\"}], [\"AcceptedCredentials\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"STArray\"}], [\"Delegate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 12, \"type\": \"AccountID\"}], [\"OverpaymentInterestRate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 68, \"type\": \"UInt32\"}], [\"CloseInterestRate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 67, \"type\": \"UInt32\"}], [\"LateInterestRate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 66, \"type\": \"UInt32\"}], [\"InterestRate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 65, \"type\": \"UInt32\"}], [\"OverpaymentFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 64, \"type\": \"UInt32\"}], [\"CoverRateLiquidation\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 63, \"type\": \"UInt32\"}], [\"CoverRateMinimum\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 62, \"type\": \"UInt32\"}], [\"GracePeriod\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 56, \"type\": \"UInt32\"}], [\"PaymentInterval\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 55, \"type\": \"UInt32\"}], [\"StartDate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 54, \"type\": \"UInt32\"}], [\"MutableFlags\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 53, \"type\": \"UInt32\"}], [\"PermissionValue\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 52, \"type\": \"UInt32\"}], [\"OracleDocumentID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 51, \"type\": \"UInt32\"}], [\"FirstNFTokenSequence\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 50, \"type\": \"UInt32\"}], [\"VoteWeight\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 48, \"type\": \"UInt32\"}], [\"MintedNFTokens\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 43, \"type\": \"UInt32\"}], [\"NFTokenTaxon\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 42, \"type\": \"UInt32\"}], [\"TicketSequence\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 41, \"type\": \"UInt32\"}], [\"LoanID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 38, \"type\": \"Hash256\"}], [\"LoanBrokerID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 37, \"type\": \"Hash256\"}], [\"SettleDelay\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 39, \"type\": \"UInt32\"}], [\"ParentBatchID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 36, \"type\": \"Hash256\"}], [\"SignerListID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 38, \"type\": \"UInt32\"}], [\"VaultID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 35, \"type\": \"Hash256\"}], [\"FinishAfter\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 37, \"type\": \"UInt32\"}], [\"DomainID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 34, \"type\": \"Hash256\"}], [\"CancelAfter\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 36, \"type\": \"UInt32\"}], [\"HookSetTxnID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 33, \"type\": \"Hash256\"}], [\"CredentialType\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 31, \"type\": \"Blob\"}], [\"LoanBrokerNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"UInt64\"}], [\"ReserveIncrement\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 32, \"type\": \"UInt32\"}], [\"NFTokenSellOffer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"Hash256\"}], [\"Price\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"Amount\"}], [\"Data\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 27, \"type\": \"Blob\"}], [\"HookNamespace\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 32, \"type\": \"Hash256\"}], [\"LPTokenBalance\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"Amount\"}], [\"MPTokenMetadata\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 30, \"type\": \"Blob\"}], [\"VaultNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"UInt64\"}], [\"Asset2\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"Issue\"}], [\"ReserveBase\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"UInt32\"}], [\"NFTokenBuyOffer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"Hash256\"}], [\"EPrice\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"Amount\"}], [\"DIDDocument\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 26, \"type\": \"Blob\"}], [\"ClearFlag\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 34, \"type\": \"UInt32\"}], [\"HookHash\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 31, \"type\": \"Hash256\"}], [\"MinAccountCreateAmount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"Amount\"}], [\"Provider\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 29, \"type\": \"Blob\"}], [\"LockedAmount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"UInt64\"}], [\"Asset\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"Issue\"}], [\"ReferenceFeeUnits\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"UInt32\"}], [\"TickSize\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"UInt8\"}], [\"NextPageMin\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"Hash256\"}], [\"LPTokenIn\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"Amount\"}], [\"HookParameterValue\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 25, \"type\": \"Blob\"}], [\"SetFlag\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 33, \"type\": \"UInt32\"}], [\"HookStateKey\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"Hash256\"}], [\"SignatureReward\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"Amount\"}], [\"AssetClass\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 28, \"type\": \"Blob\"}], [\"XChainBridge\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"XChainBridge\"}], [\"SubjectNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"UInt64\"}], [\"IssuingChainIssue\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"Issue\"}], [\"OperationLimit\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"UInt32\"}], [\"PreviousPageMin\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"Hash256\"}], [\"LPTokenOut\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 25, \"type\": \"Amount\"}], [\"HookParameterName\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 24, \"type\": \"Blob\"}], [\"IssuerNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"UInt64\"}], [\"LockingChainIssue\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Issue\"}], [\"TransactionIndex\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"UInt32\"}], [\"ValidatedHash\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 25, \"type\": \"Hash256\"}], [\"ReserveIncrementDrops\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 24, \"type\": \"Amount\"}], [\"HookReturnString\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 23, \"type\": \"Blob\"}], [\"MPTAmount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"UInt64\"}], [\"LastLedgerSequence\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"UInt32\"}], [\"CheckID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 24, \"type\": \"Hash256\"}], [\"ReserveBaseDrops\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 23, \"type\": \"Amount\"}], [\"HookStateData\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 22, \"type\": \"Blob\"}], [\"OutstandingAmount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 25, \"type\": \"UInt64\"}], [\"FirstLedgerSequence\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"UInt32\"}], [\"ConsensusHash\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 23, \"type\": \"Hash256\"}], [\"BaseFeeDrops\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 22, \"type\": \"Amount\"}], [\"CounterpartySignature\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 37, \"type\": \"STObject\"}], [\"ValidatorToReEnable\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 21, \"type\": \"Blob\"}], [\"ExclusionEntry\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 201, \"type\": \"STObject\"}], [\"LowQualityOut\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"UInt32\"}], [\"HookApiVersion\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 20, \"type\": \"UInt16\"}], [\"AssetScale\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"UInt8\"}], [\"HookReturnCode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 18, \"type\": \"UInt64\"}], [\"TakerGetsIssuer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"Hash160\"}], [\"BookDirectory\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"Hash256\"}], [\"ClosePaymentFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"Number\"}], [\"XChainClaimAttestationCollectionElement\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 30, \"type\": \"STObject\"}], [\"MemoFormat\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 14, \"type\": \"Blob\"}], [\"LedgerEntryType\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"UInt16\"}], [\"Cookie\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"UInt64\"}], [\"TransferRate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"UInt32\"}], [\"RootIndex\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"Hash256\"}], [\"WithdrawalPolicy\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 20, \"type\": \"UInt8\"}], [\"AssetsTotal\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"Number\"}], [\"HighLimit\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"Amount\"}], [\"HookDefinition\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 22, \"type\": \"STObject\"}], [\"Signature\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": true, \"nth\": 6, \"type\": \"Blob\"}], [\"XChainClaimAttestations\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 21, \"type\": \"STArray\"}], [\"Authorize\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 5, \"type\": \"AccountID\"}], [\"HookEmitCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 18, \"type\": \"UInt16\"}], [\"TransactionResult\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"UInt8\"}], [\"HighQualityOut\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 17, \"type\": \"UInt32\"}], [\"HookOn\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"UInt64\"}], [\"HookStateCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 45, \"type\": \"UInt32\"}], [\"TakerPaysIssuer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"Hash160\"}], [\"AMMID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 14, \"type\": \"Hash256\"}], [\"LoanServiceFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"Number\"}], [\"BidMax\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"Amount\"}], [\"XChainClaimProofSig\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 28, \"type\": \"STObject\"}], [\"MemoType\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 12, \"type\": \"Blob\"}], [\"UnauthorizeCredentials\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"STArray\"}], [\"Holder\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 11, \"type\": \"AccountID\"}], [\"DestinationTag\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 14, \"type\": \"UInt32\"}], [\"EmitBurden\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"UInt64\"}], [\"EmitParentTxnID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"Hash256\"}], [\"DebtMaximum\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"Number\"}], [\"DeliverMin\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"Amount\"}], [\"VoteEntry\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 25, \"type\": \"STObject\"}], [\"RemoveCode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 9, \"type\": \"Blob\"}], [\"PriceDataSeries\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 24, \"type\": \"STArray\"}], [\"RegularKey\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 8, \"type\": \"AccountID\"}], [\"Transaction\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 257, \"type\": \"Transaction\"}], [\"LowNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"UInt64\"}], [\"ParentCloseTime\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"UInt32\"}], [\"PreviousTxnID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"Hash256\"}], [\"UNLModifyDisabling\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 17, \"type\": \"UInt8\"}], [\"Number\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Number\"}], [\"TakerPays\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"Amount\"}], [\"DisabledValidator\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"STObject\"}], [\"SigningPubKey\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 3, \"type\": \"Blob\"}], [\"HookExecutions\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 18, \"type\": \"STArray\"}], [\"Owner\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 2, \"type\": \"AccountID\"}], [\"Scale\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"UInt8\"}], [\"HookExecutionIndex\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"UInt16\"}], [\"LowQualityIn\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 18, \"type\": \"UInt32\"}], [\"HookInstructionCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 17, \"type\": \"UInt64\"}], [\"EmitGeneration\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 46, \"type\": \"UInt32\"}], [\"TakerGetsCurrency\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"Hash160\"}], [\"LatePaymentFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"Number\"}], [\"XChainCreateAccountProofSig\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 29, \"type\": \"STObject\"}], [\"MemoData\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 13, \"type\": \"Blob\"}], [\"ServerVersion\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"UInt64\"}], [\"WalletSize\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"UInt32\"}], [\"AccountTxnID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"Hash256\"}], [\"LossUnrealized\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"Number\"}], [\"Fee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"Amount\"}], [\"HookParameter\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 23, \"type\": \"STObject\"}], [\"Domain\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 7, \"type\": \"Blob\"}], [\"XChainCreateAccountAttestations\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 22, \"type\": \"STArray\"}], [\"Unauthorize\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 6, \"type\": \"AccountID\"}], [\"LastUpdateTime\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 15, \"type\": \"UInt32\"}], [\"CloseResolution\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"UInt8\"}], [\"EmitNonce\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"Hash256\"}], [\"CoverAvailable\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"Number\"}], [\"Amount2\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 11, \"type\": \"Amount\"}], [\"AuctionSlot\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"STObject\"}], [\"ExpireCode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 10, \"type\": \"Blob\"}], [\"AuthAccounts\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 25, \"type\": \"STArray\"}], [\"NFTokenMinter\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 9, \"type\": \"AccountID\"}], [\"Version\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"UInt16\"}], [\"hash\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 257, \"type\": \"Hash256\"}], [\"AttestationSignerAccount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 20, \"type\": \"AccountID\"}], [\"TransferFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 4, \"type\": \"UInt16\"}], [\"SourceTag\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"UInt32\"}], [\"IndexPrevious\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"UInt64\"}], [\"EmailHash\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Hash128\"}], [\"OtherChainSource\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 18, \"type\": \"AccountID\"}], [\"TransactionType\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"UInt16\"}], [\"LedgerEntry\", {\"isSerialized\": false, \"isSigningField\": false, \"isVLEncoded\": false, \"nth\": 257, \"type\": \"LedgerEntry\"}], [\"PaymentRemaining\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 59, \"type\": \"UInt32\"}], [\"HighNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 8, \"type\": \"UInt64\"}], [\"SigningTime\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"UInt32\"}], [\"LedgerIndex\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 6, \"type\": \"Hash256\"}], [\"HookResult\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 18, \"type\": \"UInt8\"}], [\"AssetsAvailable\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"Number\"}], [\"PaymentTotal\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 60, \"type\": \"UInt32\"}], [\"LoanScale\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Int32\"}], [\"TakerGets\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 5, \"type\": \"Amount\"}], [\"EmittedTxn\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 20, \"type\": \"STObject\"}], [\"TxnSignature\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": true, \"nth\": 4, \"type\": \"Blob\"}], [\"HookParameters\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"STArray\"}], [\"Destination\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 3, \"type\": \"AccountID\"}], [\"VoteCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 201, \"type\": \"UInt32\"}], [\"DestinationNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"UInt64\"}], [\"Expiration\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"UInt32\"}], [\"WalletLocator\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 7, \"type\": \"Hash256\"}], [\"WasLockingChainSend\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"UInt8\"}], [\"AssetsMaximum\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 3, \"type\": \"Number\"}], [\"LowLimit\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 6, \"type\": \"Amount\"}], [\"HookExecution\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 21, \"type\": \"STObject\"}], [\"URI\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 5, \"type\": \"Blob\"}], [\"HookGrants\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 20, \"type\": \"STArray\"}], [\"Issuer\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 4, \"type\": \"AccountID\"}], [\"Method\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 2, \"type\": \"UInt8\"}], [\"HighQualityIn\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"UInt32\"}], [\"BurnedNFTokens\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 44, \"type\": \"UInt32\"}], [\"TakerPaysCurrency\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 1, \"type\": \"Hash160\"}], [\"EmitHookHash\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"Hash256\"}], [\"LoanOriginationFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"Number\"}], [\"BidMin\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"Amount\"}], [\"AuthAccount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 27, \"type\": \"STObject\"}], [\"CreateCode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 11, \"type\": \"Blob\"}], [\"AuthorizeCredentials\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 26, \"type\": \"STArray\"}], [\"EmitCallback\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 10, \"type\": \"AccountID\"}], [\"OwnerCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 13, \"type\": \"UInt32\"}], [\"NFTokenOfferNode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 12, \"type\": \"UInt64\"}], [\"NFTokenID\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 10, \"type\": \"Hash256\"}], [\"DebtTotal\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 6, \"type\": \"Number\"}], [\"SendMax\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 9, \"type\": \"Amount\"}], [\"HookGrant\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 24, \"type\": \"STObject\"}], [\"FundCode\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 8, \"type\": \"Blob\"}], [\"XChainAccountClaimCount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 22, \"type\": \"UInt64\"}], [\"BondAmount\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 23, \"type\": \"UInt32\"}], [\"PeriodicPayment\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 16, \"type\": \"Number\"}], [\"NFTokenBrokerFee\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 19, \"type\": \"Amount\"}], [\"RawTransaction\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 34, \"type\": \"STObject\"}], [\"MasterSignature\", {\"isSerialized\": true, \"isSigningField\": false, \"isVLEncoded\": true, \"nth\": 18, \"type\": \"Blob\"}], [\"PreviousPaymentDueDate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 57, \"type\": \"UInt32\"}], [\"NextPaymentDueDate\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": false, \"nth\": 58, \"type\": \"UInt32\"}], [\"OtherChainDestination\", {\"isSerialized\": true, \"isSigningField\": true, \"isVLEncoded\": true, \"nth\": 19, \"type\": \"AccountID\"}], [\"SignerWeight\", {\"isSerialized\": true, \"isSigningFi",
+        "sha256": "70d7fd517da4cfe5bcc90a0a8c55a0880b030d094ed6294c8c743f8f9d994238",
+        "size_bytes": 49207,
+        "top_level_keys": [
+          "result"
+        ]
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 49207,
+        "stored": "truncated"
+      },
+      "result_keys": [
+        "FIELDS",
+        "LEDGER_ENTRY_TYPES",
+        "TRANSACTION_RESULTS",
+        "TRANSACTION_TYPES",
+        "TYPES",
+        "hash",
+        "status"
+      ]
+    },
+    "server_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1292,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "server_info",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "info": {
+            "build_version": "1.0.9",
+            "complete_ledgers": "7950054-8023087",
+            "hostid": "MUFF",
+            "initial_sync_duration_us": "144067489",
+            "io_latency_ms": 1,
+            "jq_trans_overflow": "0",
+            "last_close": {
+              "converge_time_s": 2.005,
+              "proposers": 24
+            },
+            "load_factor": 1,
+            "network_id": 2025,
+            "peer_disconnects": "82",
+            "peer_disconnects_resources": "0",
+            "peers": 21,
+            "ports": [
+              {
+                "port": "2559",
+                "protocol": [
+                  "peer"
+                ]
+              },
+              {
+                "port": "6005",
+                "protocol": [
+                  "ws"
+                ]
+              },
+              {
+                "port": "50051",
+                "protocol": [
+                  "grpc"
+                ]
+              }
+            ],
+            "pubkey_node": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE",
+            "server_state": "full",
+            "server_state_duration_us": "1483707640226",
+            "state_accounting": {
+              "connected": {
+                "duration_us": "42011874",
+                "transitions": "3"
+              },
+              "disconnected": {
+                "duration_us": "100053977",
+                "transitions": "3"
+              },
+              "full": {
+                "duration_us": "1483707640226",
+                "transitions": "1"
+              },
+              "syncing": {
+                "duration_us": "2001613",
+                "transitions": "1"
+              },
+              "tracking": {
+                "duration_us": "21",
+                "transitions": "1"
+              }
+            },
+            "time": "2026-Nov-13 20:57:47.804995 UTC",
+            "uptime": 1483851,
+            "validated_ledger": {
+              "age": 3,
+              "base_fee_xrp": 1e-05,
+              "hash": "8A54DCF81A000E98466DCA5A6526A51968D4AAD19A812663BC9AFDB26A199AF4",
+              "reserve_base_xrp": 10,
+              "reserve_inc_xrp": 2,
+              "seq": 8023087
+            },
+            "validation_quorum": 17
+          },
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1260,
+        "stored": "full"
+      },
+      "result_keys": [
+        "info",
+        "status"
+      ]
+    },
+    "server_state": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 808,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "server_state",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "state": {
+            "build_version": "1.0.9",
+            "complete_ledgers": "7950054-8023119",
+            "initial_sync_duration_us": "144067489",
+            "io_latency_ms": 1,
+            "jq_trans_overflow": "0",
+            "last_close": {
+              "converge_time": 2000,
+              "proposers": 24
+            },
+            "load_base": 256,
+            "load_factor": 256,
+            "load_factor_fee_escalation": 256,
+            "load_factor_fee_queue": 256,
+            "load_factor_fee_reference": 256,
+            "load_factor_server": 256,
+            "network_id": 2025,
+            "peer_disconnects": "82",
+            "peer_disconnects_resources": "0",
+            "peers": 21,
+            "ports": [
+              {
+                "port": "2559",
+                "protocol": [
+                  "peer"
+                ]
+              },
+              {
+                "port": "6005",
+                "protocol": [
+                  "ws"
+                ]
+              },
+              {
+                "port": "50051",
+                "protocol": [
+                  "grpc"
+                ]
+              }
+            ],
+            "pubkey_node": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE",
+            "server_state": "full",
+            "server_state_duration_us": "1483801914704",
+            "state_accounting": {
+              "connected": {
+                "duration_us": "42011874",
+                "transitions": "3"
+              },
+              "disconnected": {
+                "duration_us": "100053977",
+                "transitions": "3"
+              },
+              "full": {
+                "duration_us": "1483801914704",
+                "transitions": "1"
+              },
+              "syncing": {
+                "duration_us": "2001613",
+                "transitions": "1"
+              },
+              "tracking": {
+                "duration_us": "21",
+                "transitions": "1"
+              }
+            },
+            "time": "2026-Nov-13 20:59:22.079359 UTC",
+            "uptime": 1483946,
+            "validated_ledger": {
+              "base_fee": 10,
+              "close_time": 847918761,
+              "hash": "5303A125AC2BB1159F64724C813B594EE9BF30178E5965132C54718249D0E8D7",
+              "reserve_base": 10000000,
+              "reserve_inc": 2000000,
+              "seq": 8023119
+            },
+            "validation_quorum": 17
+          },
+          "status": "success"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 1398,
+        "stored": "full"
+      },
+      "result_keys": [
+        "state",
+        "status"
+      ]
+    },
+    "sign": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 838,
+      "error_code": "notSupported",
+      "error_code_num": 75,
+      "error_message": "Signing is not supported by this server.",
+      "method": "sign",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "notSupported",
+          "error_code": 75,
+          "error_message": "Signing is not supported by this server.",
+          "request": {
+            "command": "sign"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 167,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "sign_for": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1041,
+      "error_code": "notSupported",
+      "error_code_num": 75,
+      "error_message": "Signing is not supported by this server.",
+      "method": "sign_for",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "notSupported",
+          "error_code": 75,
+          "error_message": "Signing is not supported by this server.",
+          "request": {
+            "command": "sign_for"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 171,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "simulate": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1028,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Neither `tx_blob` nor `tx_json` included.",
+      "method": "simulate",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Neither `tx_blob` nor `tx_json` included.",
+          "request": {
+            "command": "simulate"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 173,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "stop": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "stop",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "submit": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 841,
+      "error_code": "notSupported",
+      "error_code_num": 75,
+      "error_message": "Signing is not supported by this server.",
+      "method": "submit",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "notSupported",
+          "error_code": 75,
+          "error_message": "Signing is not supported by this server.",
+          "request": {
+            "command": "submit"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 169,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "submit_multisigned": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 692,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Missing field 'tx_json'.",
+      "method": "submit_multisigned",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Missing field 'tx_json'.",
+          "request": {
+            "command": "submit_multisigned"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 166,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "subscribe": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 852,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Invalid parameters.",
+      "method": "subscribe",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Invalid parameters.",
+          "request": {
+            "command": "subscribe"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 152,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "transaction_entry": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 979,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "transaction_entry",
+      "outcome": "success",
+      "params": [
+        {
+          "ledger_index": 8020944,
+          "tx_hash": "26A1A21211FA1FD1D7B41259A3A17E860D438FA00609052BFC20F0825BA7BE11"
+        }
+      ],
+      "response": {
+        "result": {
+          "ledger_hash": "3554A62EA871A1BEEFFD4DA09C194E5DA66641CC18EDB86CB068563746E5BE71",
+          "ledger_index": 8020944,
+          "metadata": {
+            "AffectedNodes": [
+              {
+                "ModifiedNode": {
+                  "FinalFields": {
+                    "Account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+                    "Balance": "170880799",
+                    "BurnedNFTokens": 3,
+                    "FirstNFTokenSequence": 7999659,
+                    "Flags": 0,
+                    "MintedNFTokens": 10,
+                    "OwnerCount": 1,
+                    "Sequence": 7999878
+                  },
+                  "LedgerEntryType": "AccountRoot",
+                  "LedgerIndex": "06BF936E82D62908933CA24892F56E9D66A735FE592595E900C88689556EBC9B",
+                  "PreviousFields": {
+                    "Balance": "170880809",
+                    "MintedNFTokens": 9,
+                    "Sequence": 7999877
+                  },
+                  "PreviousTxnID": "DC907A4DA45127BC177FF98B8A1C8E6DA1ECCB16D3539859D022A3624318E296",
+                  "PreviousTxnLgrSeq": 8020934
+                }
+              },
+              {
+                "ModifiedNode": {
+                  "FinalFields": {
+                    "Flags": 0,
+                    "NFTokens": [
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21911210684007A10B4",
+                          "URI": "697066733A2F2F516D3933636432643534396665373935353262323933363732383034373165343362383434666463633738376362"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219430CB7D8007A10AB",
+                          "URI": "697066733A2F2F516D6361643665656131646235626335316232666433303233636233633735633762373534636339316432383862"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21987BE2DE9007A10AE",
+                          "URI": "697066733A2F2F516D6663613235643664336134356464663730323333666164396563323563313666646130633631376265646561"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D2199EA3F699007A10AF",
+                          "URI": "697066733A2F2F516D6333666463373161643935616631356565643537643939376535666537306135313464323839383736373937"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219B589E8E4007A10B0",
+                          "URI": "697066733A2F2F516D3465326566636362633166373565343665666137313637393735646133376531353337306165626564346437"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219E355664E007A10B2",
+                          "URI": "697066733A2F2F516D6264633861633530343063343830636135316539653662643866393038353634373462326139653135383965"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219FA3B2E9D007A10B3",
+                          "URI": "697066733A2F2F516D3032626236323037396337623166353663393935653939656134326462623134336663383037633732663231"
+                        }
+                      }
+                    ]
+                  },
+                  "LedgerEntryType": "NFTokenPage",
+                  "LedgerIndex": "D554C98A3F9521002BDAC1D9DEA493D62114D219FFFFFFFFFFFFFFFFFFFFFFFF",
+                  "PreviousFields": {
+                    "NFTokens": [
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219430CB7D8007A10AB",
+                          "URI": "697066733A2F2F516D6361643665656131646235626335316232666433303233636233633735633762373534636339316432383862"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21987BE2DE9007A10AE",
+                          "URI": "697066733A2F2F516D6663613235643664336134356464663730323333666164396563323563313666646130633631376265646561"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D2199EA3F699007A10AF",
+                          "URI": "697066733A2F2F516D6333666463373161643935616631356565643537643939376535666537306135313464323839383736373937"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219B589E8E4007A10B0",
+                          "URI": "697066733A2F2F516D3465326566636362633166373565343665666137313637393735646133376531353337306165626564346437"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219E355664E007A10B2",
+                          "URI": "697066733A2F2F516D6264633861633530343063343830636135316539653662643866393038353634373462326139653135383965"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219FA3B2E9D007A10B3",
+                          "URI": "697066733A2F2F516D3032626236323037396337623166353663393935653939656134326462623134336663383037633732663231"
+                        }
+                      }
+                    ]
+                  },
+                  "PreviousTxnID": "4B71F42DA197B5669BD7DAECA30FF19E0E8F9149EF3C61C646864D01107F2E11",
+                  "PreviousTxnLgrSeq": 8015563
+                }
+              }
+            ],
+            "TransactionIndex": 0,
+            "TransactionResult": "tesSUCCESS"
+          },
+          "status": "success",
+          "tx_json": {
+            "Account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+            "Fee": "10",
+            "LastLedgerSequence": 8020962,
+            "NFTokenTaxon": 2251,
+            "NetworkID": 2025,
+            "Sequence": 7999877,
+            "SigningPubKey": "EDDD9949055852228D5BA9CC671B4ABB2F75338910EDC853938057CD46D3037CB0",
+            "TransactionType": "NFTokenMint",
+            "TxnSignature": "28456086580FC31EEE52A3CCE78AE215A718B5C11159882EF4798C1DC6F958F9BE6066CFBA69BF542084AB5B0E123D12D4BEE8CF7A057CEA55D38F2C1A9AAA02",
+            "URI": "697066733A2F2F516D3933636432643534396665373935353262323933363732383034373165343362383434666463633738376362",
+            "hash": "26A1A21211FA1FD1D7B41259A3A17E860D438FA00609052BFC20F0825BA7BE11"
+          },
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 4533,
+        "stored": "full"
+      },
+      "result_keys": [
+        "ledger_hash",
+        "ledger_index",
+        "metadata",
+        "status",
+        "tx_json",
+        "validated"
+      ]
+    },
+    "tx": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1020,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "tx",
+      "outcome": "success",
+      "params": [
+        {
+          "transaction": "26A1A21211FA1FD1D7B41259A3A17E860D438FA00609052BFC20F0825BA7BE11"
+        }
+      ],
+      "response": {
+        "result": {
+          "Account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+          "Fee": "10",
+          "LastLedgerSequence": 8020962,
+          "NFTokenTaxon": 2251,
+          "NetworkID": 2025,
+          "Sequence": 7999877,
+          "SigningPubKey": "EDDD9949055852228D5BA9CC671B4ABB2F75338910EDC853938057CD46D3037CB0",
+          "TransactionType": "NFTokenMint",
+          "TxnSignature": "28456086580FC31EEE52A3CCE78AE215A718B5C11159882EF4798C1DC6F958F9BE6066CFBA69BF542084AB5B0E123D12D4BEE8CF7A057CEA55D38F2C1A9AAA02",
+          "URI": "697066733A2F2F516D3933636432643534396665373935353262323933363732383034373165343362383434666463633738376362",
+          "ctid": "C07A63D0000007E9",
+          "date": 847912162,
+          "hash": "26A1A21211FA1FD1D7B41259A3A17E860D438FA00609052BFC20F0825BA7BE11",
+          "inLedger": 8020944,
+          "ledger_index": 8020944,
+          "meta": {
+            "AffectedNodes": [
+              {
+                "ModifiedNode": {
+                  "FinalFields": {
+                    "Account": "rLSzVyyjZBjWKVyLAp97123tiuVZvVJDfq",
+                    "Balance": "170880799",
+                    "BurnedNFTokens": 3,
+                    "FirstNFTokenSequence": 7999659,
+                    "Flags": 0,
+                    "MintedNFTokens": 10,
+                    "OwnerCount": 1,
+                    "Sequence": 7999878
+                  },
+                  "LedgerEntryType": "AccountRoot",
+                  "LedgerIndex": "06BF936E82D62908933CA24892F56E9D66A735FE592595E900C88689556EBC9B",
+                  "PreviousFields": {
+                    "Balance": "170880809",
+                    "MintedNFTokens": 9,
+                    "Sequence": 7999877
+                  },
+                  "PreviousTxnID": "DC907A4DA45127BC177FF98B8A1C8E6DA1ECCB16D3539859D022A3624318E296",
+                  "PreviousTxnLgrSeq": 8020934
+                }
+              },
+              {
+                "ModifiedNode": {
+                  "FinalFields": {
+                    "Flags": 0,
+                    "NFTokens": [
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21911210684007A10B4",
+                          "URI": "697066733A2F2F516D3933636432643534396665373935353262323933363732383034373165343362383434666463633738376362"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219430CB7D8007A10AB",
+                          "URI": "697066733A2F2F516D6361643665656131646235626335316232666433303233636233633735633762373534636339316432383862"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21987BE2DE9007A10AE",
+                          "URI": "697066733A2F2F516D6663613235643664336134356464663730323333666164396563323563313666646130633631376265646561"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D2199EA3F699007A10AF",
+                          "URI": "697066733A2F2F516D6333666463373161643935616631356565643537643939376535666537306135313464323839383736373937"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219B589E8E4007A10B0",
+                          "URI": "697066733A2F2F516D3465326566636362633166373565343665666137313637393735646133376531353337306165626564346437"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219E355664E007A10B2",
+                          "URI": "697066733A2F2F516D6264633861633530343063343830636135316539653662643866393038353634373462326139653135383965"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219FA3B2E9D007A10B3",
+                          "URI": "697066733A2F2F516D3032626236323037396337623166353663393935653939656134326462623134336663383037633732663231"
+                        }
+                      }
+                    ]
+                  },
+                  "LedgerEntryType": "NFTokenPage",
+                  "LedgerIndex": "D554C98A3F9521002BDAC1D9DEA493D62114D219FFFFFFFFFFFFFFFFFFFFFFFF",
+                  "PreviousFields": {
+                    "NFTokens": [
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219430CB7D8007A10AB",
+                          "URI": "697066733A2F2F516D6361643665656131646235626335316232666433303233636233633735633762373534636339316432383862"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21987BE2DE9007A10AE",
+                          "URI": "697066733A2F2F516D6663613235643664336134356464663730323333666164396563323563313666646130633631376265646561"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D2199EA3F699007A10AF",
+                          "URI": "697066733A2F2F516D6333666463373161643935616631356565643537643939376535666537306135313464323839383736373937"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219B589E8E4007A10B0",
+                          "URI": "697066733A2F2F516D3465326566636362633166373565343665666137313637393735646133376531353337306165626564346437"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219E355664E007A10B2",
+                          "URI": "697066733A2F2F516D6264633861633530343063343830636135316539653662643866393038353634373462326139653135383965"
+                        }
+                      },
+                      {
+                        "NFToken": {
+                          "NFTokenID": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D219FA3B2E9D007A10B3",
+                          "URI": "697066733A2F2F516D3032626236323037396337623166353663393935653939656134326462623134336663383037633732663231"
+                        }
+                      }
+                    ]
+                  },
+                  "PreviousTxnID": "4B71F42DA197B5669BD7DAECA30FF19E0E8F9149EF3C61C646864D01107F2E11",
+                  "PreviousTxnLgrSeq": 8015563
+                }
+              }
+            ],
+            "TransactionIndex": 0,
+            "TransactionResult": "tesSUCCESS",
+            "nftoken_id": "00000000D554C98A3F9521002BDAC1D9DEA493D62114D21911210684007A10B4"
+          },
+          "status": "success",
+          "validated": true
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 4583,
+        "stored": "full"
+      },
+      "result_keys": [
+        "Account",
+        "Fee",
+        "LastLedgerSequence",
+        "NFTokenTaxon",
+        "NetworkID",
+        "Sequence",
+        "SigningPubKey",
+        "TransactionType",
+        "TxnSignature",
+        "URI",
+        "ctid",
+        "date",
+        "hash",
+        "inLedger",
+        "ledger_index",
+        "meta",
+        "status",
+        "validated"
+      ]
+    },
+    "tx_history": {
+      "api_version": 1,
+      "attempts": 1,
+      "duration_ms": 831,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Invalid parameters.",
+      "method": "tx_history",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "api_version": 1
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Invalid parameters.",
+          "request": {
+            "api_version": 1,
+            "command": "tx_history"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 171,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "tx_reduce_relay": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1023,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "tx_reduce_relay",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "status": "success",
+          "txr_get_ledger_cnt": "0",
+          "txr_get_ledger_sz": "0",
+          "txr_have_txs_cnt": "0",
+          "txr_have_txs_sz": "0",
+          "txr_ledger_data_cnt": "0",
+          "txr_ledger_data_sz": "0",
+          "txr_missing_tx_freq": "0",
+          "txr_not_enabled_cnt": "0",
+          "txr_selected_cnt": "0",
+          "txr_suppressed_cnt": "0",
+          "txr_transactions_cnt": "0",
+          "txr_transactions_sz": "0",
+          "txr_tx_cnt": "0",
+          "txr_tx_sz": "0"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 392,
+        "stored": "full"
+      },
+      "result_keys": [
+        "status",
+        "txr_get_ledger_cnt",
+        "txr_get_ledger_sz",
+        "txr_have_txs_cnt",
+        "txr_have_txs_sz",
+        "txr_ledger_data_cnt",
+        "txr_ledger_data_sz",
+        "txr_missing_tx_freq",
+        "txr_not_enabled_cnt",
+        "txr_selected_cnt",
+        "txr_suppressed_cnt",
+        "txr_transactions_cnt",
+        "txr_transactions_sz",
+        "txr_tx_cnt",
+        "txr_tx_sz"
+      ]
+    },
+    "unl_list": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "unl_list",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "unsubscribe": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 796,
+      "error_code": "invalidParams",
+      "error_code_num": 31,
+      "error_message": "Invalid parameters.",
+      "method": "unsubscribe",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "invalidParams",
+          "error_code": 31,
+          "error_message": "Invalid parameters.",
+          "request": {
+            "command": "unsubscribe"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 154,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "validation_create": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "validation_create",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "validator_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "validator_info",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "validator_list_sites": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "validator_list_sites",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "validator_votes": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 902,
+      "error_code": "invalidValidatorPublicKey",
+      "error_code_num": "",
+      "error_message": "Invalid validator public key format",
+      "method": "validator_votes",
+      "outcome": "rpc_error",
+      "params": [
+        {
+          "validation_public_key": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE"
+        }
+      ],
+      "response": {
+        "result": {
+          "error": "invalidValidatorPublicKey",
+          "error_message": "Invalid validator public key format",
+          "request": {
+            "command": "validator_votes",
+            "validation_public_key": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE"
+          },
+          "status": "error"
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 249,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_message",
+        "request",
+        "status"
+      ]
+    },
+    "validators": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "validators",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    },
+    "vault_info": {
+      "api_version": 2,
+      "attempts": 1,
+      "duration_ms": 1041,
+      "error_code": "malformedRequest",
+      "error_code_num": 31,
+      "error_message": "Invalid parameters.",
+      "method": "vault_info",
+      "outcome": "rpc_error",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "error": "malformedRequest",
+          "error_code": 31,
+          "error_message": "Invalid parameters.",
+          "ledger_current_index": 8023125,
+          "request": {
+            "command": "vault_info"
+          },
+          "status": "error",
+          "validated": false
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 209,
+        "stored": "full"
+      },
+      "result_keys": [
+        "error",
+        "error_code",
+        "error_message",
+        "ledger_current_index",
+        "request",
+        "status",
+        "validated"
+      ]
+    },
+    "version": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": 939,
+      "error_code": "",
+      "error_code_num": "",
+      "error_message": "",
+      "method": "version",
+      "outcome": "success",
+      "params": [
+        {}
+      ],
+      "response": {
+        "result": {
+          "status": "success",
+          "version": {
+            "first": "1.0.0",
+            "good": "1.0.0",
+            "last": "1.0.0"
+          }
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 98,
+        "stored": "full"
+      },
+      "result_keys": [
+        "status",
+        "version"
+      ]
+    },
+    "wallet_propose": {
+      "api_version": 2,
+      "attempts": 2,
+      "duration_ms": null,
+      "error_code": "http_403_forbidden",
+      "error_code_num": 403,
+      "error_message": "Forbidden\r\n",
+      "method": "wallet_propose",
+      "outcome": "http_forbidden",
+      "params": [
+        {}
+      ],
+      "response": {
+        "_http_error": {
+          "body": "Forbidden\r\n",
+          "status": 403
+        }
+      },
+      "response_meta": {
+        "redactions": 0,
+        "size_bytes": 57,
+        "stored": "full"
+      },
+      "result_keys": []
+    }
+  }
+}

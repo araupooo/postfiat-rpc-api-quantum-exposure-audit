@@ -1,0 +1,21 @@
+Post-quantum RPC and API surface security assessment
+Endpoint: https://rpc.testnet.postfiat.org/
+Fetch date (UTC): 2026-11-13T20:57:45Z
+Pinned tree: postfiatd main 0085a1ff885d6a446369cf73a4430f75af22be55
+Tree HEAD matches pinned: True
+Handler table matches embedded inventory: True
+
+Methods inventoried: 74 JSON-RPC (51 USER, 23 ADMIN) + 4 gRPC + 10 WS streams
+Methods probed live: 74
+Outcomes: {"http_forbidden": 23, "rpc_error": 19, "success": 32}
+Error codes: {"badMarket": 1, "invalidParams": 8, "invalidValidatorPublicKey": 1, "malformedRequest": 1, "noEvents": 1, "notEnabled": 1, "notSupported": 4, "objectNotFound": 2}
+
+ADMIN gate: 23 of 23 ADMIN methods refused with HTTP 403 Forbidden
+Secret-accepting methods (USER-reachable): channel_authorize, sign, sign_for, submit, validation_create, wallet_propose
+Secret-returning methods (all ADMIN): validation_create, wallet_propose
+Signature-producing methods: channel_authorize, sign, sign_for
+Public-key-exposing methods returning success live: account_tx, ledger, ledger_data, ledger_entry, manifest, server_info, server_state, transaction_entry, tx
+Methods whose live response actually contained a public-key or signature field: account_tx, manifest, server_info, server_state, transaction_entry, tx
+
+Server snapshot: build 1.0.9, network_id 2025, validated ledger 8023087, complete_ledgers 7950054-8023087, peers 21, validation_quorum 17
+Node public key (server_info pubkey_node): n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE

@@ -1,0 +1,154 @@
+{
+  "admin_gate": {
+    "admin_total": 23,
+    "other_outcomes": [],
+    "refused_methods": [
+      "blacklist",
+      "can_delete",
+      "connect",
+      "consensus_info",
+      "fetch_info",
+      "get_counts",
+      "ledger_accept",
+      "ledger_cleaner",
+      "ledger_request",
+      "log_level",
+      "logrotate",
+      "peer_reservations_add",
+      "peer_reservations_del",
+      "peer_reservations_list",
+      "peers",
+      "print",
+      "stop",
+      "unl_list",
+      "validation_create",
+      "validator_info",
+      "validator_list_sites",
+      "validators",
+      "wallet_propose"
+    ],
+    "refused_no_permission": 23
+  },
+  "endpoint": "https://rpc.testnet.postfiat.org/",
+  "error_codes": {
+    "badMarket": 1,
+    "invalidParams": 8,
+    "invalidValidatorPublicKey": 1,
+    "malformedRequest": 1,
+    "noEvents": 1,
+    "notEnabled": 1,
+    "notSupported": 4,
+    "objectNotFound": 2
+  },
+  "exposure_counts": {
+    "PUBKEY_IN": 1,
+    "PUBKEY_OUT": 14,
+    "SAFE": 33,
+    "SECRET_IN": 6,
+    "SECRET_OUT": 2,
+    "SIG_OUT": 3,
+    "SIG_RELAY": 2,
+    "SIG_VERIFY": 1,
+    "STATE": 18
+  },
+  "fetch_date_utc": "2026-11-13T20:57:45Z",
+  "grpc_methods_total": 4,
+  "handler_table_check": {
+    "checked": true,
+    "matches": true,
+    "mismatches": []
+  },
+  "harness_version": "1.0.0",
+  "methods_admin": 23,
+  "methods_total": 74,
+  "methods_user": 51,
+  "outcomes": {
+    "http_forbidden": 23,
+    "rpc_error": 19,
+    "success": 32
+  },
+  "pinned_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+  "probed_total": 74,
+  "pubkey_exposing_methods_live_success": [
+    "account_tx",
+    "ledger",
+    "ledger_data",
+    "ledger_entry",
+    "manifest",
+    "server_info",
+    "server_state",
+    "transaction_entry",
+    "tx"
+  ],
+  "pubkey_fields_observed_live": [
+    "account_tx",
+    "manifest",
+    "server_info",
+    "server_state",
+    "transaction_entry",
+    "tx"
+  ],
+  "sample_sha256": "8625977b68de8768881f9c3b68a0a56dcc26d46a158c6d70a596c47b8741a88b",
+  "secret_accepting_methods": [
+    "channel_authorize",
+    "sign",
+    "sign_for",
+    "submit",
+    "validation_create",
+    "wallet_propose"
+  ],
+  "secret_returning_methods": [
+    "validation_create",
+    "wallet_propose"
+  ],
+  "server_snapshot": {
+    "build_version": "1.0.9",
+    "complete_ledgers": "7950054-8023087",
+    "network_id": 2025,
+    "peers": 21,
+    "ports": [
+      {
+        "port": "2559",
+        "protocol": [
+          "peer"
+        ]
+      },
+      {
+        "port": "6005",
+        "protocol": [
+          "ws"
+        ]
+      },
+      {
+        "port": "50051",
+        "protocol": [
+          "grpc"
+        ]
+      }
+    ],
+    "pubkey_node": "n9K4AomBUHA8XGwXtZs6qfCjXm5aXre9UchiD6oGuZx1UeRLUweE",
+    "server_state": "full",
+    "validated_ledger_seq": 8023087,
+    "validation_quorum": 17
+  },
+  "signature_producing_methods": [
+    "channel_authorize",
+    "sign",
+    "sign_for"
+  ],
+  "transport_observation": {
+    "alpn": "http/1.1",
+    "certificate": "re-signed by the sandbox egress CA; origin certificate not observable",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "key_exchange": "X25519",
+    "observed": "2026-11-14T20:36:00Z",
+    "origin_tls": "not observable from this machine",
+    "tls_version": "TLSv1.3",
+    "via": "curl through the runtime egress proxy (CONNECT tunnel)"
+  },
+  "tree_check": {
+    "tree_head_commit": "0085a1ff885d6a446369cf73a4430f75af22be55",
+    "tree_head_matches_pinned": true
+  },
+  "ws_streams_total": 10
+}

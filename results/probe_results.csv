@@ -1,0 +1,98 @@
+method,role,condition,handler_file,handler_line,api_range,exposure_class,exposure_note,outcome,error_code,error_code_num,error_message,attempts,duration_ms,api_version_probed,result_keys,response_bytes,response_stored
+account_info,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountInfo.cpp,50,1-3,SAFE,account_data carries no key; signer_lists carry accounts and weights only,success,,,,1,838,2,account_data;account_flags;ledger_hash;ledger_index;status;validated,1008,full
+account_currencies,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountCurrenciesHandler.cpp,32,1-3,SAFE,currency lists only,success,,,,2,716,2,ledger_current_index;receive_currencies;send_currencies;status;validated,135,full
+account_lines,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountLines.cpp,81,1-3,SAFE,trust lines only,success,,,,1,849,2,account;ledger_current_index;lines;status;validated,148,full
+account_channels,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountChannels.cpp,68,1-3,SAFE,"channel ids, amounts, delays; no keys",success,,,,1,879,2,account;channels;ledger_current_index;status;validated,151,full
+account_nfts,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountObjects.cpp,50,1-3,SAFE,token ids and URIs; no keys,success,,,,2,830,2,account;account_nfts;ledger_current_index;status;validated,1965,full
+account_objects,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountObjects.cpp,181,1-3,SAFE,ledger entries; SignerList entries carry accounts only,success,,,,3,804,2,account;account_objects;ledger_current_index;status;validated,1688,full
+account_offers,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountOffers.cpp,57,1-3,SAFE,offer amounts only,success,,,,1,869,2,account;ledger_current_index;offers;status;validated,149,full
+account_tx,USER,NO_CONDITION,src/xrpld/rpc/handlers/AccountTx.cpp,408,1-3,PUBKEY_OUT,every returned transaction carries SigningPubKey and TxnSignature,success,,,,1,1042,2,account;ledger_index_max;ledger_index_min;limit;marker;status;transactions;validated,11185,full
+amm_info,USER,NO_CONDITION,src/xrpld/rpc/handlers/AMMInfo.cpp,76,1-3,SAFE,pool balances and LP tokens; no keys,rpc_error,invalidParams,31,Invalid parameters.,1,783,2,error;error_code;error_message;ledger_current_index;request;status;validated,204,full
+blacklist,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/BlackList.cpp,29,1-3,STATE,ADMIN: peer blacklist control,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+book_changes,USER,NO_CONDITION,src/xrpld/rpc/handlers/BookOffers.cpp,222,1-3,SAFE,order-book deltas; no keys,success,,,,1,784,2,changes;ledger_hash;ledger_index;ledger_time;status;type;validated,225,full
+book_offers,USER,NO_CONDITION,src/xrpld/rpc/handlers/BookOffers.cpp,37,1-3,SAFE,offers; no keys,rpc_error,badMarket,42,No such market.,2,822,2,error;error_code;error_message;request;status,228,full
+can_delete,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/CanDelete.cpp,35,1-3,STATE,ADMIN: reports ledgers that may be deleted,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+channel_authorize,USER,NO_CONDITION,src/xrpld/rpc/handlers/PayChanClaim.cpp,42,1-3,SECRET_IN|SIG_OUT,takes secret (or key_type+seed) and returns a channel-claim signature,rpc_error,notSupported,75,Signing is not supported by this server.,1,807,2,error;error_code;error_message;request;status,180,full
+channel_verify,USER,NO_CONDITION,src/xrpld/rpc/handlers/PayChanClaim.cpp,113,1-3,SIG_VERIFY,takes public_key + signature and verifies the claim; does not sign,rpc_error,invalidParams,31,Missing field 'public_key'.,2,811,2,error;error_code;error_message;request;status,165,full
+connect,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Connect.cpp,39,1-3,STATE,ADMIN: connects to a peer by IP,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+consensus_info,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/ConsensusInfo.cpp,30,1-3,STATE,ADMIN: consensus state; no keys,http_forbidden,http_403_forbidden,403,"Forbidden
+",3,,2,,57,full
+deposit_authorized,USER,NO_CONDITION,src/xrpld/rpc/handlers/DepositAuthorized.cpp,41,1-3,SAFE,boolean + ledger entry data; no keys,success,,,,1,781,2,deposit_authorized;destination_account;ledger_current_index;source_account;status;validated,231,full
+exclusion_info,USER,NO_CONDITION,src/xrpld/rpc/handlers/ExclusionInfo.cpp,35,1-3,SAFE,excluded-account list; no keys,rpc_error,notEnabled,12,PF_AccountExclusion feature is not enabled,1,989,2,error;error_code;error_message;request;status,177,full
+feature,USER,NO_CONDITION,src/xrpld/rpc/handlers/Feature1.cpp,36,1-3,SAFE,amendment list; no keys,success,,,,1,1037,2,features;status,13524,full
+fee,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/Fee1.cpp,30,1-3,SAFE,fee levels; no keys,success,,,,2,742,2,current_ledger_size;current_queue_size;drops;expected_ledger_size;ledger_current_index;levels;max_queue_size;status,390,full
+fetch_info,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/FetchInfo.cpp,30,1-3,STATE,ADMIN: ledger-fetch state,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+gateway_balances,USER,NO_CONDITION,src/xrpld/rpc/handlers/GatewayBalances.cpp,54,1-3,SAFE,balances; no keys,success,,,,3,953,2,account;ledger_current_index;status;validated,135,full
+get_counts,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/GetCounts.cpp,138,1-3,STATE,ADMIN: internal counters,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+get_aggregate_price,USER,NO_CONDITION,src/xrpld/rpc/handlers/GetAggregatePrice.cpp,153,1-3,SAFE,oracle price; no keys,rpc_error,invalidParams,31,Missing field 'oracles'.,1,986,2,error;error_code;error_message;request;status,167,full
+ledger,USER,NO_CONDITION,src/xrpld/rpc/handlers/LedgerHandler.h,63,1-3,PUBKEY_OUT,conditional: transactions:true returns tx JSON with SigningPubKey and TxnSignature,success,,,,1,708,2,ledger;ledger_hash;ledger_index;status;validated,793,full
+ledger_accept,ADMIN,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/LedgerAccept.cpp,34,1-3,STATE,ADMIN: closes the ledger (standalone mode only),http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+ledger_cleaner,ADMIN,NEEDS_NETWORK_CONNECTION,src/xrpld/rpc/handlers/LedgerCleanerHandler.cpp,30,1-3,STATE,ADMIN: ledger cleaner control,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+ledger_closed,USER,NEEDS_CLOSED_LEDGER,src/xrpld/rpc/handlers/LedgerClosed.cpp,30,1-3,SAFE,ledger hash and index only,success,,,,2,922,2,ledger_hash;ledger_index;status,141,full
+ledger_current,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/LedgerCurrent.cpp,30,1-3,SAFE,ledger index only,success,,,,2,1003,2,ledger_current_index;status,66,full
+ledger_data,USER,NO_CONDITION,src/xrpld/rpc/handlers/LedgerData.cpp,46,1-3,PUBKEY_OUT,conditional: ltPAYCHAN entries carry sfPublicKey; other entries carry no key,success,,,,1,1017,2,ledger;ledger_hash;ledger_index;marker;state;status;validated,3020,full
+ledger_entry,USER,NO_CONDITION,src/xrpld/rpc/handlers/LedgerEntry.cpp,755,1-3,PUBKEY_OUT,conditional: ltPAYCHAN entries carry sfPublicKey,success,,,,1,785,2,index;ledger_hash;ledger_index;node;status;validated,652,full
+ledger_header,USER,NO_CONDITION,src/xrpld/rpc/handlers/LedgerHeader.cpp,34,1,SAFE,"header hash chain only; no signature, no key",success,,,,1,959,1,ledger;ledger_data;ledger_hash;ledger_index;status;validated,1048,full
+ledger_request,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/LedgerRequest.cpp,36,1-3,STATE,ADMIN: requests a ledger from peers,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+log_level,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/LogLevel.cpp,34,1-3,STATE,ADMIN: changes log verbosity,http_forbidden,http_403_forbidden,403,"Forbidden
+",2,,2,,57,full
+logrotate,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/LogRotate.cpp,29,1-3,STATE,ADMIN: rotates log files,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+manifest,USER,NO_CONDITION,src/xrpld/rpc/handlers/DoManifest.cpp,30,1-3,PUBKEY_OUT,returns the manifest for a public key: signing key plus master signature,success,,,,1,1017,2,details;requested;status,258,full
+nft_buy_offers,USER,NO_CONDITION,src/xrpld/rpc/handlers/NFTOffers.cpp,165,1-3,SAFE,offer amounts; no keys,rpc_error,objectNotFound,92,The requested object was not found.,1,844,2,error;error_code;error_message;request;status,252,full
+nft_sell_offers,USER,NO_CONDITION,src/xrpld/rpc/handlers/NFTOffers.cpp,151,1-3,SAFE,offer amounts; no keys,rpc_error,objectNotFound,92,The requested object was not found.,1,835,2,error;error_code;error_message;request;status,253,full
+noripple_check,USER,NO_CONDITION,src/xrpld/rpc/handlers/NoRippleCheck.cpp,62,1-3,SAFE,account flags; no keys,success,,,,1,750,2,ledger_current_index;problems;status;validated,155,full
+owner_info,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/OwnerInfo.cpp,35,1-3,SAFE,owned objects; no keys,success,,,,1,989,2,accepted;current;status,64,full
+peers,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Peers.cpp,33,1-3,STATE,"ADMIN: peer list (IPs, versions); no keys in the handler",http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+path_find,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/PathFind.cpp,33,1-3,SAFE,paths and alternatives; no keys,rpc_error,noEvents,7,Current transport does not support events.,1,862,2,error;error_code;error_message;request;status,415,full
+ping,USER,NO_CONDITION,src/xrpld/rpc/handlers/Ping.cpp,33,1-3,SAFE,liveness only,success,,,,1,822,2,ip;role;status,76,full
+print,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Print.cpp,30,1-3,STATE,ADMIN: prints internal state to the log,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+random,USER,NO_CONDITION,src/xrpld/rpc/handlers/Random.cpp,39,1-3,SAFE,256-bit CSPRNG output; not key material,success,,,,1,808,2,random;status,111,full
+peer_reservations_add,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Reservations.cpp,36,1-3,STATE,ADMIN: peer reservation control,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+peer_reservations_del,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Reservations.cpp,89,1-3,STATE,ADMIN: peer reservation control,http_forbidden,http_403_forbidden,403,"Forbidden
+",2,,2,,57,full
+peer_reservations_list,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Reservations.cpp,116,1-3,STATE,ADMIN: peer reservation list,http_forbidden,http_403_forbidden,403,"Forbidden
+",3,,2,,57,full
+ripple_path_find,USER,NO_CONDITION,src/xrpld/rpc/handlers/RipplePathFind.cpp,33,1-3,SAFE,paths and alternatives; no keys,success,,,,2,748,2,alternatives;destination_account;destination_amount;destination_currencies;full_reply;ledger_hash;ledger_index;source_account;status;validated,457,full
+server_definitions,USER,NO_CONDITION,src/xrpld/rpc/handlers/ServerInfo.cpp,299,1-3,SAFE,field and type definitions; no keys,success,,,,1,1084,2,FIELDS;LEDGER_ENTRY_TYPES;TRANSACTION_RESULTS;TRANSACTION_TYPES;TYPES;hash;status,49207,truncated
+server_info,USER,NO_CONDITION,src/xrpld/rpc/handlers/ServerInfo.cpp,322,1-3,PUBKEY_OUT,returns pubkey_node (the node's secp256k1 validator public key) plus listening ports,success,,,,1,1292,2,info;status,1260,full
+server_state,USER,NO_CONDITION,src/xrpld/rpc/handlers/ServerState.cpp,30,1-3,PUBKEY_OUT,returns state.pubkey_node (the node's secp256k1 validator public key),success,,,,1,808,2,state;status,1398,full
+sign,USER,NO_CONDITION,src/xrpld/rpc/handlers/SignHandler.cpp,34,1-3,SECRET_IN|SIG_OUT,takes exactly one of passphrase/secret/seed/seed_hex and returns a signed tx_blob/tx_json,rpc_error,notSupported,75,Signing is not supported by this server.,1,838,2,error;error_code;error_message;request;status,167,full
+sign_for,USER,NO_CONDITION,src/xrpld/rpc/handlers/SignFor.cpp,35,1-3,SECRET_IN|SIG_OUT,takes exactly one of passphrase/secret/seed/seed_hex and returns a multi-signed tx,rpc_error,notSupported,75,Signing is not supported by this server.,1,1041,2,error;error_code;error_message;request;status,171,full
+simulate,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/Simulate.cpp,311,1-3,SAFE,"dry-runs a supplied tx_json; echoes any SigningPubKey/TxnSignature already in it, signs nothing",rpc_error,invalidParams,31,Neither `tx_blob` nor `tx_json` included.,1,1028,2,error;error_code;error_message;request;status,173,full
+stop,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Stop.cpp,32,1-3,STATE,ADMIN: stops the server,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+submit,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/Submit.cpp,45,1-3,SECRET_IN|SIG_RELAY,tx_blob path relays a pre-signed transaction; tx_json+secret path signs server-side when signing is enabled (deprecated),rpc_error,notSupported,75,Signing is not supported by this server.,1,841,2,error;error_code;error_message;request;status,169,full
+submit_multisigned,USER,NEEDS_CURRENT_LEDGER,src/xrpld/rpc/handlers/SubmitMultiSigned.cpp,34,1-3,SIG_RELAY,relays a fully multi-signed transaction; no signing,rpc_error,invalidParams,31,Missing field 'tx_json'.,1,692,2,error;error_code;error_message;request;status,166,full
+transaction_entry,USER,NO_CONDITION,src/xrpld/rpc/handlers/TransactionEntry.cpp,38,1-3,PUBKEY_OUT,returns tx JSON with SigningPubKey and TxnSignature,success,,,,1,979,2,ledger_hash;ledger_index;metadata;status;tx_json;validated,4533,full
+tx,USER,NEEDS_NETWORK_CONNECTION,src/xrpld/rpc/handlers/Tx.cpp,286,1-3,PUBKEY_OUT,returns tx JSON with SigningPubKey and TxnSignature,success,,,,1,1020,2,Account;Fee;LastLedgerSequence;NFTokenTaxon;NetworkID;Sequence;SigningPubKey;TransactionType;TxnSignature;URI;ctid;date;hash;inLedger;ledger_index;meta;status;validated,4583,full
+tx_history,USER,NO_CONDITION,src/xrpld/rpc/handlers/TxHistory.cpp,39,1,PUBKEY_OUT,returns transaction history JSON with SigningPubKey and TxnSignature,rpc_error,invalidParams,31,Invalid parameters.,1,831,1,error;error_code;error_message;request;status,171,full
+tx_reduce_relay,USER,NO_CONDITION,src/xrpld/rpc/handlers/TxReduceRelay.cpp,29,1-3,SAFE,overlay transaction metrics; no keys,success,,,,1,1023,2,status;txr_get_ledger_cnt;txr_get_ledger_sz;txr_have_txs_cnt;txr_have_txs_sz;txr_ledger_data_cnt;txr_ledger_data_sz;txr_missing_tx_freq;txr_not_enabled_cnt;txr_selected_cnt;txr_suppressed_cnt;txr_transactions_cnt;txr_transactions_sz;txr_tx_cnt;txr_tx_sz,392,full
+unl_list,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/UnlList.cpp,30,1-3,PUBKEY_OUT,ADMIN: returns the UNL with validator public keys (pubkey_validator),http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+validation_create,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/ValidationCreate.cpp,45,1-3,SECRET_IN|SECRET_OUT,ADMIN: optional secret input; returns validation_seed and validation_key,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+validators,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/Validators.cpp,29,1-3,PUBKEY_OUT,ADMIN: returns validator lists with publisher public keys (pubkey_publisher),http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+validator_list_sites,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/ValidatorListSites.cpp,29,1-3,STATE,ADMIN: validator site list; no keys,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+validator_info,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/ValidatorInfo.cpp,31,1-3,PUBKEY_OUT,ADMIN: returns this node's ephemeral validation public key,http_forbidden,http_403_forbidden,403,"Forbidden
+",1,,2,,57,full
+validator_votes,USER,NO_CONDITION,src/xrpld/rpc/handlers/ValidatorVotes.cpp,46,1-3,PUBKEY_IN,takes validation_public_key and returns that validator's amendment votes,rpc_error,invalidValidatorPublicKey,,Invalid validator public key format,1,902,2,error;error_message;request;status,249,full
+vault_info,USER,NO_CONDITION,src/xrpld/rpc/handlers/VaultInfo.cpp,79,1-3,SAFE,vault entry data; no keys,rpc_error,malformedRequest,31,Invalid parameters.,1,1041,2,error;error_code;error_message;ledger_current_index;request;status;validated,209,full
+wallet_propose,ADMIN,NO_CONDITION,src/xrpld/rpc/handlers/WalletPropose.cpp,68,1-3,SECRET_IN|SECRET_OUT,"ADMIN: optional passphrase/seed input; returns master_seed, master_key and account",http_forbidden,http_403_forbidden,403,"Forbidden
+",2,,2,,57,full
+subscribe,USER,NO_CONDITION,src/xrpld/rpc/handlers/Subscribe.cpp,38,1-3,PUBKEY_OUT,"live streams: validations carry validator pubkeys and signatures, transactions carry SigningPubKey",rpc_error,invalidParams,31,Invalid parameters.,1,852,2,error;error_code;error_message;request;status,152,full
+unsubscribe,USER,NO_CONDITION,src/xrpld/rpc/handlers/Unsubscribe.cpp,33,1-3,SAFE,cancels subscriptions,rpc_error,invalidParams,31,Invalid parameters.,1,796,2,error;error_code;error_message;request;status,154,full
+version,USER,NO_CONDITION,src/xrpld/rpc/handlers/Version.h,49,1-3,SAFE,build version string only,success,,,,2,939,2,status;version,98,full

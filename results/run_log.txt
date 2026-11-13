@@ -1,0 +1,26 @@
+harness.py: OK (offline mode, 74 methods probed, 32 success, 19 rpc_error, 23 http_forbidden, 0 transport_error)
+build_derived.py: OK (docs/index.html)
+./README.md: OK
+./REPRODUCTION.md: OK
+./api_inventory.csv: OK
+./api_inventory.md: OK
+./assumptions.md: OK
+./build_derived.py: OK
+./claim_evidence_index.md: OK
+./docs/index.html: OK
+./exposure_analysis.md: OK
+./harness.py: OK
+./migration_design.md: OK
+./results/fetch_log.json: OK
+./results/method_counts.csv: OK
+./results/probe_raw.json: OK
+./results/probe_results.csv: OK
+./results/run_log.txt: OK
+./results/summary.json: OK
+./results/summary.txt: OK
+./run_all.sh: OK
+./sources.md: OK
+./verify_digests.sh: OK
+verify_digests.sh: SHA256SUMS regenerated and verified
+run_all.sh: OK
+run_all.sh exit code: 0
